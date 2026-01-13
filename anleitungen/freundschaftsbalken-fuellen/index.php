@@ -50,9 +50,9 @@
         </div>
         
         <p class="intro-text u-mt-16">
-          Viele lassen sich <strong>über 2.500 Würfel</strong> in Monopoly GO entgehen, 
-          weil sie nicht wissen, wie der Freundschaftsbalken funktioniert oder weil es zu 
-          aufwendig ist, jeden Freund in einer Cloner-App einzeln hinzuzufügen.
+          Viele von euch lassen sich <strong>über 2.500 Würfel</strong> in Monopoly GO entgehen, 
+          weil sie nicht wissen, wie sie die Freundschaftsbalken füllen können oder es ihnen zu 
+          mühselig ist, jeden Freund in einer Cloner App einzeln hinzuzufügen.
         </p>
         <p class="intro-text">
           <strong>Würfel sind zum Würfeln da</strong> – deshalb zeigen wir dir, 
