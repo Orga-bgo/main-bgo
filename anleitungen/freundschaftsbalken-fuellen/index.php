@@ -218,6 +218,15 @@
         </div>
 
         <div class="substep">
+          <div class="substep-title">Magisk</div>
+          <div class="substep-content">
+            <p>Downloade und installiere die App.</p>
+            <p>Öffnen → wähle installieren → wähle „Direkte Installation (empfohlen)".</p>
+            <p>Nach Abschluss wirst du aufgefordert die Instanz neuzustarten → Neustarten.</p>
+          </div>
+        </div>
+
+        <div class="substep">
           <div class="substep-title">b) babixGO App & Berechtigungen</div>
           <div class="substep-content">
             Installiere die <code>babixgo-fbar.apk</code> und aktiviere alle Berechtigungen sowie den Accessibility-Dienst.
