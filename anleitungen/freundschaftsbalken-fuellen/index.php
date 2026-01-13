@@ -72,7 +72,23 @@
         <div class="content-card">
           <div class="info-line">
             <span class="info-line-label">Würfel-Belohnung</span>
-            <span class="info-line-value">2500+</span>
+            <span class="info-line-value">2.500+</span>
+          </div>
+          <div class="info-line">
+            <span class="info-line-label">Roll Match</span>
+            <span class="info-line-value">✓</span>
+          </div>
+          <div class="info-line">
+            <span class="info-line-label">Cash Boost</span>
+            <span class="info-line-value">✓</span>
+          </div>
+          <div class="info-line">
+            <span class="info-line-label">Mr. Monopoly Token</span>
+            <span class="info-line-value">✓</span>
+          </div>
+          <div class="info-line">
+            <span class="info-line-label">Fbar Schild</span>
+            <span class="info-line-value">✓</span>
           </div>
           <div class="info-line">
             <span class="info-line-label">Zeitaufwand manuell</span>
