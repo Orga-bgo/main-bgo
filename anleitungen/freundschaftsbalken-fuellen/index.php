@@ -348,7 +348,7 @@
           </div>
           <p class="text-small text-muted u-mt-8 u-mb-0">
             ✓ Über 2.500 Würfel Belohnung<br>
-            ✓ Bearbeitung in der Regel innerhalb von 24 Stunden<br>
+            ✓ Bearbeitung in der Regel innerhalb von wenigen Minuten<br>
             ✓ Sorgfältige Abwicklung mit klaren Hinweisen
           </p>
         </div>
