@@ -39,7 +39,7 @@
         <!-- Hero Image -->
         <div class="hero-image u-mt-16">
           <img src="/assets/img/fbar/fbar-balken-4-voll.png" 
-               alt="Vollständig gefüllter Monopoly GO Freundschaftsbalken mit über 2500 Würfeln Belohnung" 
+               alt="Vollständig gefüllter Monopoly GO Freundschaftsbalken mit über 2.500 Würfeln Belohnung" 
                loading="eager"
                fetchpriority="high"
                width="238"
