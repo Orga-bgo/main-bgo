@@ -230,7 +230,7 @@
         <!-- SCHRITT 3 -->
         <div class="content-card-header u-mt-20">
           <div class="content-card-title">
-            <h3>Schritt 3: Freunde automatisch hinzufügen</h3>
+            <h3>Schritt 3: Endlich Würfel!</h3>
           </div>
           <span class="badge-success">Los geht's!</span>
         </div>
