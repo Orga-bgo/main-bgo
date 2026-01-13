@@ -362,12 +362,7 @@
           </a>
         </div>
 
-        <div class="u-text-center u-mt-16">
-          <a href="/downloads/" class="text-small link-primary-underline">
-            <span class="emoji" role="img" aria-label="Download">📥</span>Alle benötigten Apps findest du im Downloadbereich
-          </a>
-        </div>
-      </div>
+              </div>
 
     </div>
   </main>
