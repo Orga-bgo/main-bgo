@@ -120,14 +120,15 @@
       </div>
       <div class="section-card">
         <p class="intro-text intro-text--left">
-          Für diese Methode brauchst du:
+          Folgende Apps benötigst du für diese Methode:
         </p>
 
         <ul class="list list--relaxed u-mt-12">
-          <li><strong>vPhoneOS</strong> – Virtuelle Android-Umgebung</li>
-          <li><strong>babixGO App</strong> – Automatisierungs-Tool</li>
-          <li><strong>Monopoly GO</strong> – Das Spiel</li>
-          <li><strong>Google Chrome</strong> (Android 7) oder <strong>Samsung Internet</strong> (Android 12)</li>
+          <li><strong>vPhoneOS</strong></li>
+          <li><strong>Aurora Store</strong></li>
+          <li><strong>babixGO-fbar-app</strong></li>
+          <li><strong>Monopoly Go</strong></li>
+          <li><strong>Google Chrome</strong> oder <strong>Samsung Internet</strong></li>
         </ul>
 
         <div class="notice-box notice-box--info u-mt-16">
