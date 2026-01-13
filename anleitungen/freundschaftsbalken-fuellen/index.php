@@ -182,7 +182,7 @@
         </div>
 
         <div class="substep">
-          <div class="substep-title">c) Erste Instanz erstellen</div>
+          <div class="substep-title">Erste Instanz erstellen</div>
           <div class="substep-content">
             <p>Jetzt kannst du in vPhoneOS deine erste virtuelle Android-Instanz erstellen.</p>
             
