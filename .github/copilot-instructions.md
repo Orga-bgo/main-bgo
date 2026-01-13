@@ -119,12 +119,12 @@ All partials are in `/partials/` and must be included using:
 
 **Typography:**
 ```css
---font-size-h1: 2rem
---font-size-h2: 1.5rem
---font-size-h3: 1.2rem
---font-size-body: 1rem
---font-size-small: 0.9rem
---font-size-xs: 0.8rem
+--font-size-h1: 2rem;
+--font-size-h2: 1.5rem;
+--font-size-h3: 1.2rem;
+--font-size-body: 1rem;
+--font-size-small: 0.9rem;
+--font-size-xs: 0.8rem;
 ```
 
 **Colors:**
