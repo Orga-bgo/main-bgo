@@ -159,7 +159,7 @@
         </div>
 
         <div class="substep u-mt-element">
-          <div class="substep-title">a) App downloaden und installieren</div>
+          <div class="substep-title">App downloaden und installieren</div>
           <div class="substep-content">
             Lade vPhoneOS herunter und installiere die App auf deinem Android-Smartphone.
           </div>
