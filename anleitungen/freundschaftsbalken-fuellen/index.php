@@ -240,6 +240,12 @@
           <div class="substep-content">
             <p>Installiere die babixgo-fbar.apk und starte sie.</p>
             <p>Du wirst aufgefordert einige Berechtigungen zu erteilen – das machst du natürlich.</p>
+            <ul>
+              <li>Link des Zielaccounts einfügen</li>
+              <li>Anzahl der Wiederholungen</li>
+              <li>Die Zeit zwischen den Durchläufen</li>
+              <li>Bestätigt folgendes gelesen zu haben:</li>
+            </ul>
           </div>
         </div>
 
