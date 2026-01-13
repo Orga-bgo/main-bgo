@@ -236,9 +236,10 @@
         </div>
 
         <div class="substep u-mt-element">
-          <div class="substep-title">a) Link einfügen & Loop starten</div>
+          <div class="substep-title">Die babixGO - App</div>
           <div class="substep-content">
-            Füge deinen Freundschaftslink in der babixGO App ein und lege die Anzahl der Wiederholungen fest.
+            <p>Installiere die babixgo-fbar.apk und starte sie.</p>
+            <p>Du wirst aufgefordert einige Berechtigungen zu erteilen – das machst du natürlich.</p>
           </div>
         </div>
 
