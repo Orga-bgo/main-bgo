@@ -167,7 +167,7 @@
 
         <div class="substep">
           <div class="substep-title">
-            b) Optional: Stabilität verbessern 
+            Optional: Stabilität verbessern 
             <span class="badge-warning">Optional</span>
           </div>
           <div class="substep-content">
