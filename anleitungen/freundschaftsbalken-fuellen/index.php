@@ -172,12 +172,11 @@
           </div>
           <div class="substep-content">
             <p>Auf vielen Geräten läuft die App problemlos ohne diesen Schritt. 
-            Wenn sie bei dir häufiger abstürzt, kannst du Folgendes tun:</p>
+            Sollte sie bei dir oft abstürzen, kannst du Folgendes tun:</p>
             <ul>
               <li>Öffne die Geräteeinstellungen</li>
-              <li>Tippe 7× auf „Buildnummer", um die Entwickleroptionen zu aktivieren</li>
-              <li>Suche nach „Beschränkungen für untergeordnete Prozesse"</li>
-              <li>Aktiviere die Option</li>
+              <li>Suche nach „Buildnummer" → 7x anklicken. Damit hast du die „Entwicklereinstellungen" aktiviert.</li>
+              <li>Suche nach „Beschränkungen für Untergeordnete Prozesse" und aktiviere diese Option.</li>
             </ul>
           </div>
         </div>
