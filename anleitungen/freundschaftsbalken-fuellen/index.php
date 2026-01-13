@@ -135,9 +135,8 @@
           <span class="notice-box__icon">📥</span>
           <strong class="notice-box__title">Download-Links</strong>
           <p class="notice-box__text">
-            Alle benötigten Apps findest du im 
-            <a href="/downloads/" class="link-primary-underline">Downloadbereich</a> 
-            mit Hinweisen und Installationsanleitungen.
+            Die dazugehörigen Downloadlinks sowie weitere Infos zu den Apps findest du in unserem 
+            <a href="/downloads/" class="link-primary-underline">Downloadbereich</a>.
           </p>
         </div>
       </div>
