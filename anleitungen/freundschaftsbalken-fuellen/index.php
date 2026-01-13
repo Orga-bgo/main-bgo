@@ -226,13 +226,7 @@
           </div>
         </div>
 
-        <div class="substep">
-          <div class="substep-title">b) babixGO App & Berechtigungen</div>
-          <div class="substep-content">
-            Installiere die <code>babixgo-fbar.apk</code> und aktiviere alle Berechtigungen sowie den Accessibility-Dienst.
-          </div>
-        </div>
-
+        
         <!-- SCHRITT 3 -->
         <div class="content-card-header u-mt-20">
           <div class="content-card-title">
