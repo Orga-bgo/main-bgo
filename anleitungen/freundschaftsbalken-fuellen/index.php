@@ -190,9 +190,9 @@
               <span class="notice-box__icon">💡</span>
               <strong class="notice-box__title">Empfehlung: Android 12</strong>
               <p class="notice-box__text">
-                Als Free-User steht nur Android 7 zur Verfügung. Wir empfehlen 
-                <strong>Android 12</strong>, weil es stabiler läuft. 
-                Ein Tag VIP kostet etwa 2 € und lohnt sich meist.
+                Als „Free-User" steht dir nur Android 7 zur Verfügung. Wir nutzen und empfehlen 
+                <strong>Android 12</strong>, da es am zuverlässigsten arbeitet! 
+                Einen Tag VIP erhaltet ihr schon für ~2€ – eine lohnende Investition.
               </p>
             </div>
           </div>
@@ -305,8 +305,8 @@
           <button type="button" class="faq-question" aria-expanded="false">Warum empfehlt ihr Android 12 statt Android 7?</button>
           <div class="faq-answer">
             <p>
-              Android 12 läuft stabiler und hat weniger Abstürze. Als Free-User steht nur Android 7 zur Verfügung, 
-              aber ein Tag VIP kostet etwa 2 € und lohnt sich meist.
+              Android 12 arbeitet am zuverlässigsten. Als „Free-User" steht dir nur Android 7 zur Verfügung. 
+              Einen Tag VIP erhaltet ihr schon für ~2€ – eine lohnende Investition.
             </p>
           </div>
         </div>
