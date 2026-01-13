@@ -210,13 +210,10 @@
         </div>
 
         <div class="substep u-mt-element">
-          <div class="substep-title">a) Aurora Store & Apps</div>
+          <div class="substep-title">Aurora Store</div>
           <div class="substep-content">
-            Installiere Aurora Store, Monopoly GO sowie den passenden Browser in der Instanz:
-            <ul>
-              <li>Android 7: Google Chrome</li>
-              <li>Android 12: Samsung Internet</li>
-            </ul>
+            <p>Downloade und installiere in der Instanz den Aurora Store.</p>
+            <p>Öffne den Store & schließe die Einrichtung ab. Dann suche nach Monopoly Go und Google Chrome (für A7) oder Samsung Internet (A12).</p>
           </div>
         </div>
 
