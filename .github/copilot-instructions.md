@@ -1,205 +1,128 @@
-# GitHub Copilot Instructions for babixGO.de
+# Copilot Instructions: babixGO.de
 
-This repository contains the babixGO.de website - a static HTML/CSS/JavaScript project with server-side PHP partials.
+## Project Summary
+Static website for Monopoly GO services. Pure HTML/CSS/JavaScript with PHP server-side includes. NO build process or dependencies.
+- **Tech:** PHP 8.3+, HTML, CSS (3,850 lines), JS (835 lines) | 32 PHP files, 171 total files
+- **Deployment:** Auto SFTP to Strato on push to `main` (`.github/workflows/main.yml`)
 
-## Critical Documents
+## CRITICAL: Read These First (Violations = PR Rejection)
+1. **Agents.md** - Binding rules, structure, workflows (MANDATORY)
+2. **DESIGN_SYSTEM.md** - Brand tokens, components, styles
+3. **README.md** - Project overview
 
-Before making any changes, **read these files**:
+## Development: Zero Dependencies, No Build
 
-- **Agents.md** - Mandatory rules, structure, and workflows for this project
-- **DESIGN_SYSTEM.md** - Brand guide, design tokens, component styles, and governance
-- **README.md** - Project overview and orientation
+**Start Server:** `php -S localhost:8000` (from `/home/runner/work/bgo/bgo`)
+**Validate PHP:** `php -l filename.php` OR `find . -name "*.php" -exec php -l {} \; 2>&1 | grep -v "No syntax errors"`
+**Test:** Open browser, check console (F12), test mobile view, verify partials loaded
+**Deploy:** Auto on push to `main` - no manual steps
 
-## Project Overview
-
-- **Technology**: Pure HTML, CSS, JavaScript with server-side PHP partials
-- **No Build Tools**: No npm, webpack, bundlers, or compilation steps
-- **Deployment**: Direct FTP/SFTP upload to Strato webhosting
-- **Architecture**: Static website with reusable content via PHP partials
-
-## Core Principles
-
-1. **No Duplicates** - Use central locations for shared content
-2. **Maintain Structure** - Respect existing folder organization
-3. **Simple Over Clever** - Prefer straightforward, maintainable solutions
-4. **Central Management** - Changes to navigation, tracking, or meta happen in one place
-
-## File Structure Rules
-
-### Production Files
-- Production pages are `.php` files in root or content folders
-- Templates in `/templates/` are for copying only (not for linking or production use)
-
-### Non-Production Folders (DO NOT MODIFY)
-- `/weg/` - Archive of old files (read-only, no references, no migrations)
-- `/add/` - Future potential files (no production references; move to correct location when used, then remove from `/add/`)
-- `/examples/` - Reference and examples only
-- `/to-do/` - Ideas, tasks, planning only
-
-### Assets Structure
-- **CSS**: `assets/css/style.css` (single source of truth)
-- **JS**: `assets/js/main.js` (global scripts)
-- **Icons**: `assets/icons/` (all SVG icons)
-- **No additional global CSS or JS files allowed**
-
-## PHP Partials (MANDATORY)
-
-All partials are in `/partials/` and must be included using:
-
-```php
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/FILENAME.php'; ?>
+**Environment Variables (contact form only):**
+```bash
+BABIXGO_DB_HOST, BABIXGO_DB_NAME, BABIXGO_DB_USER, BABIXGO_DB_PASS
 ```
 
-**Never use**:
-- Relative paths
-- `__DIR__`
-- Short tags
-
-### Required Inclusion Order
-
-**In `<head>`:**
-1. `head-meta.php` (common meta basis)
-2. Page-specific: `<title>`, `<meta name="description">`, `<link rel="canonical">`
-3. `head-links.php` (CSS, favicons, fonts)
-
-**After `<body>`:**
-4. `tracking.php` (all Google/GA/FB Pixel)
-5. `cookie-banner.php` (consent management)
-6. `header.php` (navigation)
-
-**Before `</body>`:**
-7. `footer.php` (layout, links)
-8. `footer-scripts.php` (global scripts)
-
-### Partial-Specific Rules
-
-- **head-meta.php**: Common meta tags only (charset, viewport, robots, OG/Twitter base) - NO page-specific content
-- **head-links.php**: CSS, favicons, fonts, preload/preconnect - NO meta tags, NO scripts
-- **tracking.php**: ALL tracking code (Google/GA/FB) - NO tracking elsewhere
-- **cookie-banner.php**: Consent control for tracking
-- **footer-scripts.php**: Global scripts only (`assets/js/main.js` with defer) - NO tracking
-- **header.php / footer.php**: Layout and navigation only - NO meta, NO scripts, NO tracking
-
-## HTML Standards
-
-- **Valid, semantic HTML**
-- **Exactly ONE H1 per page**
-- **Images always have `alt` attributes**
-- **Required meta per page**: title, description, canonical
-- **Proper use of links vs buttons** (semantic correctness)
-
-### Heading Hierarchy Rules
-
-| Element | Location | Icon | Wrapper Class |
-|---------|----------|------|---------------|
-| **H1** | Hero section (first section-card) | No | `.welcome-title` |
-| **H2** | Section titles (outside content box) | Yes (always) | `.section-header` |
-| **H3** | Inside box/card | No (gradient underline via `::after`) | In `.content-card` or `.section-card` |
-
-**H2 Structure Pattern:**
-```html
-<div class="section-header">
-  <h2><img src="/assets/icons/[icon].svg" class="icon" alt="[Description]">[Title]</h2>
-</div>
+## Structure (Key Paths)
+```
+/partials/          # PHP includes (MUST use $_SERVER['DOCUMENT_ROOT'] . '/partials/FILE.php')
+  head-meta.php     # Meta tags | head-links.php = CSS/fonts | tracking.php = ALL tracking
+  cookie-banner.php, header.php, footer.php, footer-scripts.php
+  csrf.php, brute-force-protection.php # Security
+/assets/css/style.css  # SINGLE source (3,852 lines) - NO other global CSS
+/assets/js/main.js     # Global JS (835 lines) - NO inline scripts (CSP)
+/assets/material-symbols/  # H2 icons (48×48 SVG, 30+ icons)
+/kontakt/admin/     # Admin (CSRF + brute-force protected, 5 attempts = 15min lockout)
+/weg/, /add/        # Archive/future (DO NOT MODIFY or reference)
+/templates/         # Copy templates only (NOT production)
 ```
 
-**Exceptions:**
-- 404.php uses `.error-message` instead of `.welcome-title`
-- Legal pages (impressum, datenschutz) may have H2 without icons
+**Production Files:** `.php` in root or content folders. **Non-Production:** `/weg/`, `/add/`, `/examples/`, `/to-do/`
 
-## Design System
+## PHP Partials: STRICT Order & Rules
 
-- **Single Source of Truth**: `assets/css/style.css`
-- **NO inline styles** in production templates (only if technically mandatory)
-- **Use tokens instead of hardcoded values** (colors, spacing, typography)
-- **Design basis**: Material Design 3 Dark Medium Contrast
-- **Fonts**: Inter (400, 500, 600) for body, Montserrat (700) for headings
+**Inclusion Pattern (ALWAYS):** `<?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/FILE.php'; ?>`
+❌ NEVER: Relative paths, `__DIR__`, short tags
 
-### CSS Variables (Examples)
+**Order in EVERY page:**
+1. `<head>`: head-meta.php → page meta (title/description/canonical) → head-links.php
+2. After `<body>`: tracking.php → cookie-banner.php → header.php
+3. Before `</body>`: footer.php → footer-scripts.php
 
-**Typography:**
-```css
---font-size-h1: 2rem;
---font-size-h2: 1.5rem;
---font-size-h3: 1.2rem;
---font-size-body: 1rem;
---font-size-small: 0.9rem;
---font-size-xs: 0.8rem;
+**Partial Rules:**
+- head-meta.php = Common meta ONLY (NO page-specific)
+- head-links.php = CSS/fonts ONLY (NO meta, NO scripts)
+- tracking.php = ALL tracking (NO tracking elsewhere)
+- footer-scripts.php = Global JS ONLY (NO tracking)
+
+## HTML Requirements (Every Page)
+
+**H1:** Exactly ONE per page in hero (`.welcome-title`). Exception: 404.php uses `.error-message`
+**H2:** Section titles with icon: `<div class="section-header"><h2><img src="/assets/material-symbols/icon.svg" class="icon" alt="...">Title</h2></div>`
+**H3:** Inside cards, auto gradient underline via `::after`
+**Meta:** Title (unique), description (150-160 chars), canonical (all REQUIRED)
+**Images:** Must have descriptive alt + width/height (CLS prevention)
+**Accessibility:** Never remove focus styles, proper heading hierarchy (H1→H2→H3), labels on inputs
+
+## CSS & Design (Material Design 3 Dark)
+
+**Single Source:** `assets/css/style.css` (3,852 lines)
+❌ NO inline styles (except technically mandatory)
+❌ NO additional global CSS files
+✅ USE TOKENS: `var(--md-primary)`, `var(--font-size-h1)`, `var(--space-section)`
+**Fonts:** Inter (body: 400/500/600), Montserrat (headings: 700)
+
+## Critical Mistakes to Avoid
+
+1. ❌ Relative paths for partials → ✅ `$_SERVER['DOCUMENT_ROOT'] . '/partials/file.php'`
+2. ❌ Wrong partial order → ✅ Follow strict order above
+3. ❌ Inline styles/scripts → ✅ Use style.css/main.js (CSP violation)
+4. ❌ Editing `/weg/` or `/add/` → ✅ Leave archived files untouched
+5. ❌ New global CSS/JS files → ✅ Add to existing style.css/main.js
+6. ❌ Missing/duplicate H1 → ✅ Exactly ONE H1 per page
+7. ❌ Empty alt text → ✅ Descriptive alt on all images
+8. ❌ Hardcoded values → ✅ Use design tokens (var(--token-name))
+
+## Validation Checklist (Before Commit)
+
+```bash
+# 1. PHP syntax (MUST pass)
+find . -name "*.php" -exec php -l {} \; 2>&1 | grep -v "No syntax errors"
+
+# 2. Start server & test
+php -S localhost:8000 &  # Then test in browser
+□ Pages load without errors
+□ Browser console (F12) - NO errors
+□ Mobile view works
+□ Partials loaded (view source)
+□ NO inline styles/scripts added
+□ Images have alt + width/height
+□ Exactly ONE H1 per page
+□ Meta complete (title, description, canonical)
 ```
 
-**Colors:**
-- Use Material Design tokens like `var(--md-primary)`, `var(--md-secondary)`, `var(--text)`, `var(--muted)`
-- Background: `var(--md-background)`, `var(--md-surface)`
-- Surface containers: `var(--md-surface-container-low)`, `var(--md-surface-container)`, `var(--md-surface-container-high)`
+## Quick Reference
 
-## Accessibility Requirements
+**Key Files:**
+- `.htaccess` - Redirects, caching, security headers
+- `partials/version.php` - CSS cache version (update when changing style.css)
+- `kontakt/setup.sql` - DB schema (contacts, admin_users tables)
+- Security: `partials/csrf.php` (1h token expiry), `partials/brute-force-protection.php` (5 attempts/15min)
 
-- Do not remove focus styles
-- Maintain logical heading hierarchy
-- Forms must have labels
-- Keyboard navigation must work
+**Common Errors:**
+- PHP syntax: `php -l file.php` shows line number
+- 404: Check `.htaccess` rewrites, verify file exists
+- JS errors: Check `main.js`, no inline scripts
+- Missing partial: Use `$_SERVER['DOCUMENT_ROOT']` absolute path
 
-## Quality Assurance Before Deployment
+## Documentation Updates
+- Structure/rules → `Agents.md`
+- Design/visual → `DESIGN_SYSTEM.md`
+- New styles → `assets/css/style.css`
+- Move from `/add/` → Remove from `/add/` after
+- Old files → Move to `/weg/` (never delete)
 
-- No broken links (404 errors)
-- Test mobile view
-- Browser console should have no errors
-- Test tracking and consent functionality
-
-## Coding Standards
-
-- Follow existing code style and patterns
-- Use PHP for server-side includes only
-- Keep JavaScript in `assets/js/main.js` or structured data files
-- No CSP violations (no inline scripts with `unsafe-inline` policy)
-- Icons should be in `assets/icons/` directory, not inline SVG in templates
-
-## Changes and Maintenance
-
-- Structure or rule changes → **update Agents.md**
-- Production adoption from `/add/` → remove file from `/add/`
-- Old files → move to `/weg/` (do not delete)
-- Visual/design changes → document in **DESIGN_SYSTEM.md**
-- New styles → add to `assets/css/style.css` centrally
-
-## Development Workflow
-
-1. Read **Agents.md** before making changes
-2. Respect the mandatory partial inclusion order
-3. Use existing partials - do not duplicate content
-4. Test with local PHP server: `php -S localhost:8000`
-5. Validate HTML, check mobile view, test in browser
-6. Ensure no console errors before deployment
-
-## Important Notes
-
-- This is a **static website** - no backend framework, no build process
-- Deployment is manual via FTP/SFTP
-- All tracking must go through consent management
-- Database credentials (if needed) come from environment variables
-- Never commit secrets or sensitive data
-
-## Design Tokens and Components
-
-Refer to **DESIGN_SYSTEM.md** for:
-- Complete color token system
-- Typography scales and usage
-- Component patterns (buttons, cards, forms, etc.)
-- Spacing and layout tokens
-- Shadow and elevation system
-- Icon usage guidelines
-
-## Recent Major Changes (Current as of 2026-01-12)
-
-- Global zoom scale system introduced (`--zoom-scale`)
-- Mobile menu changed to push-down behavior
-- Icons moved from inline SVG to `assets/icons/` directory
-- Inline scripts removed from production templates (moved to `assets/js/main.js`)
-- Material Symbols icon system for H2 headings (30+ icons, 7 color categories)
-- FAQ Schema.org markup added
-- Critical CSS inline implementation
-- Resource hints (dns-prefetch, preconnect) added
+## Trust These Instructions
+Created by analyzing all docs, testing server, validating 32 PHP files. Search only if incomplete or erroneous. **For architecture/structure: consult Agents.md first.**
 
 ---
-
-**Remember**: Central locations. No duplicates. Respect structure. Read Agents.md first.
+**Validated:** 2026-01-14 | Automated analysis + manual testing
