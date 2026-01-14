@@ -562,6 +562,10 @@ small {
   cursor: pointer;
   transition: all .2s;
   font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .menu-dropdown-toggle:hover {

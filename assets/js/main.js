@@ -405,13 +405,19 @@
         if (toggle.dataset.listenerAttached === 'true') return;
         toggle.dataset.listenerAttached = 'true';
         
-        toggle.addEventListener('click', (event) => {
+        const handleDropdownToggle = (event) => {
           event.preventDefault();
           event.stopPropagation();
           const dropdown = toggle.closest('.menu-dropdown');
           const isActive = dropdown.classList.toggle('active');
           toggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
-        });
+        };
+        
+        toggle.addEventListener('click', handleDropdownToggle);
+        toggle.addEventListener('touchend', (event) => {
+          event.preventDefault();
+          handleDropdownToggle(event);
+        }, { passive: false });
       });
     }
   }
