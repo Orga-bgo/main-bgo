@@ -333,6 +333,18 @@ Wesentliche Hinweise:
 - CSS/Fonts async Loading via preload-Pattern.
 - Resource Hints (dns-prefetch, preconnect) hinzugefügt.
 
+**2026-01-14 – Progressive Web App (PWA) Integration**
+- PWA-Funktionalität ohne Build-Prozess implementiert (Zero-Dependency-Prinzip).
+- Web App Manifest erstellt (`/public/manifest.json`) mit App-Metadaten und Icons.
+- Service Worker implementiert (`/public/sw.js`) mit Cache-First (Assets) und Network-First (HTML) Strategien.
+- Offline-Fallback-Seite erstellt (`/offline.html`) mit Dark Theme und Cache-Liste.
+- PWA-Icons generiert (192x192, 512x512) aus bestehendem Logo.
+- PWA-Meta-Tags zu `partials/head-links.php` hinzugefügt (Manifest, Apple PWA Support).
+- Service Worker Registrierung in `assets/js/main.js` implementiert mit Install-Prompt und Online/Offline-Detection.
+- Umfassende PWA-Dokumentation erstellt (`PWA_DOCUMENTATION.md`).
+- PWA-Testing-Guide zu `TESTING_GUIDE.md` hinzugefügt.
+- README.md erweitert mit PWA-Installations-Anleitung und TWA-APK-Export-Optionen.
+
 ---
 
 ## Leitsatz
