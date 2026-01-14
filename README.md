@@ -180,6 +180,73 @@ Details und verbindliche Regeln siehe **Agents.md**.
 
 ---
 
+## Progressive Web App (PWA)
+
+**babixGO.de** ist als Progressive Web App (PWA) verfügbar und kann auf Mobilgeräten und Desktop-Computern installiert werden.
+
+### Was ist eine PWA?
+
+Eine PWA kombiniert das Beste aus Websites und nativen Apps:
+
+* **Installation auf dem Gerät** ohne App Store
+* **Offline-Funktionalität** durch intelligentes Caching
+* **App-ähnliches Erlebnis** im Vollbildmodus
+* **Automatische Updates** bei jedem Besuch
+* **Schnellere Ladezeiten** durch gecachte Ressourcen
+
+### PWA installieren
+
+#### Android (Chrome, Edge, Samsung Internet)
+
+1. Öffne **https://babixgo.de** im Browser
+2. Tippe auf das **Menü** (⋮) und wähle **"Zum Startbildschirm hinzufügen"** oder **"App installieren"**
+3. Bestätige mit **"Hinzufügen"** oder **"Installieren"**
+4. Die App erscheint auf dem Startbildschirm
+
+#### iOS (Safari)
+
+1. Öffne **https://babixgo.de** in Safari
+2. Tippe auf das **Teilen-Symbol** (□↑)
+3. Scrolle nach unten und wähle **"Zum Home-Bildschirm"**
+4. Tippe auf **"Hinzufügen"**
+5. Die App erscheint auf dem Home-Bildschirm
+
+#### Desktop (Chrome, Edge)
+
+1. Öffne **https://babixgo.de** im Browser
+2. Klicke auf das **Install-Symbol** (⊕) in der Adressleiste
+3. Oder: Menü → **"babixGO installieren"**
+4. Bestätige mit **"Installieren"**
+5. Die App öffnet sich in einem eigenen Fenster
+
+### Offline-Nutzung
+
+Nach der Installation sind folgende Funktionen offline verfügbar:
+
+* Zugriff auf bereits besuchte Seiten
+* Anzeige gecachter Inhalte
+* Offline-Hinweisseite mit Cache-Status
+
+### APK für Android erstellen (Trusted Web Activity)
+
+Für fortgeschrittene Nutzer: Eine Android-APK kann über **TWA (Trusted Web Activity)** erstellt werden, **ohne** Node.js oder Build-Tools:
+
+1. **PWABuilder** nutzen: [https://www.pwabuilder.com](https://www.pwabuilder.com)
+2. URL eingeben: `https://babixgo.de`
+3. PWA analysieren lassen
+4. **"Package for Stores"** → **Android** auswählen
+5. APK herunterladen und signieren
+
+Alternativ: **Bubblewrap CLI** (erfordert Java, nicht Node.js):
+```bash
+npx @bubblewrap/cli init --manifest https://babixgo.de/public/manifest.json
+npx @bubblewrap/cli build
+```
+
+Hinweis: APK-Export ist **nicht Teil des Projekt-Workflows**, da es Build-Tools erfordert. Nutzer können dies extern durchführen.
+
+---
+
 ## Mitwirken / Änderungen
 
 Dieses Projekt folgt klaren Regeln zur Konsistenz und Wartbarkeit.

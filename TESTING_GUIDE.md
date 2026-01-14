@@ -325,6 +325,191 @@ All improvements are working correctly when:
 
 ---
 
-**Last Updated**: Implementation completed on 2026-01-10  
+## 10. PWA (Progressive Web App) Testing
+
+### Test 1: Manifest Validation
+**Goal**: Verify PWA manifest is accessible and valid
+
+1. Open browser developer tools (F12)
+2. Navigate to **Application** tab (Chrome) or **Storage** tab (Firefox)
+3. Click on **Manifest** in the left sidebar
+4. **Expected**: 
+   - Manifest loads from `/public/manifest.json`
+   - Name: "babixGO - Monopoly GO Services"
+   - Short name: "babixGO"
+   - Theme color: #1a1a1a
+   - Icons: 192x192 and 512x512 visible
+   - No errors or warnings
+
+### Test 2: Service Worker Registration
+**Goal**: Verify service worker registers correctly
+
+1. Open browser developer tools (F12)
+2. Navigate to **Application** → **Service Workers**
+3. Refresh the page
+4. **Expected**:
+   - Service worker registered from `/public/sw.js`
+   - Status shows "activated and running"
+   - Scope: https://babixgo.de/ (or localhost for testing)
+   - Console shows: "Service Worker registriert: ..."
+
+### Test 3: PWA Installation (Desktop)
+**Goal**: Test PWA installation on desktop browsers
+
+**Chrome/Edge:**
+1. Visit https://babixgo.de (or localhost:8000)
+2. Look for install icon (⊕) in address bar
+3. Click the install icon OR menu → "Install babixGO"
+4. Click "Install" in the popup
+5. **Expected**: 
+   - PWA opens in standalone window
+   - App appears in application launcher
+   - Window has no browser UI (no address bar)
+
+**Firefox:**
+1. PWA installation is limited in Firefox
+2. Can still use "Add to Home Screen" on mobile Firefox
+
+### Test 4: PWA Installation (Mobile)
+**Goal**: Test PWA installation on mobile devices
+
+**Android (Chrome/Edge/Samsung Internet):**
+1. Visit https://babixgo.de on mobile
+2. Tap menu (⋮) → "Add to Home screen" or "Install app"
+3. Confirm installation
+4. **Expected**:
+   - Icon appears on home screen
+   - Tapping icon opens app in fullscreen
+   - Splash screen shows (dark background)
+   - No browser UI visible
+
+**iOS (Safari):**
+1. Visit https://babixgo.de in Safari
+2. Tap Share button (□↑)
+3. Scroll and select "Add to Home Screen"
+4. Tap "Add"
+5. **Expected**:
+   - Icon appears on home screen
+   - App opens in fullscreen mode
+   - Status bar adapts to theme color
+
+### Test 5: Offline Functionality
+**Goal**: Verify app works offline after caching
+
+1. Visit https://babixgo.de while online
+2. Navigate through 2-3 pages (/, /sticker/, /wuerfel/)
+3. Open DevTools → Application → Service Workers
+4. Check "Offline" checkbox (or disable network)
+5. Refresh the page
+6. Navigate to previously visited pages
+7. Try to visit a new, unvisited page
+8. **Expected**:
+   - Previously visited pages load from cache
+   - CSS, JS, and images load correctly
+   - Unvisited pages show `/offline.html` page
+   - Offline page displays cached pages list
+   - Online indicator shows offline status
+
+### Test 6: Cache Strategy Verification
+**Goal**: Verify caching strategies work correctly
+
+1. Open DevTools → Network tab
+2. Disable cache in DevTools
+3. Visit homepage while online
+4. Observe network requests
+5. Refresh the page
+6. **Expected** (check Service Worker):
+   - First visit: Assets load from network
+   - Second visit: Static assets (CSS, JS, images) load from Service Worker
+   - HTML pages show "(from ServiceWorker)" in Network tab
+   - Faster load times on subsequent visits
+
+### Test 7: Service Worker Update
+**Goal**: Verify service worker updates when changed
+
+1. Make a small change to `/public/sw.js` (e.g., increment CACHE_NAME)
+2. Deploy the change
+3. Visit site in browser where it's already installed
+4. Open DevTools → Application → Service Workers
+5. Look for "waiting to activate" status
+6. Refresh page or click "skipWaiting"
+7. **Expected**:
+   - New service worker detected
+   - Update activates (after refresh or skipWaiting)
+   - Old cache cleared
+   - New cache version active
+
+### Test 8: Install Prompt (Optional)
+**Goal**: Test custom install prompt functionality
+
+1. Visit site on browser that hasn't installed the PWA
+2. Look for install button in UI (if implemented)
+3. Click the install button
+4. **Expected**:
+   - Browser's native install prompt appears
+   - Installation works as expected
+   - Install button hides after installation
+
+**Note**: Custom install button requires element with `id="pwa-install-button"` in HTML
+
+### Test 9: Lighthouse PWA Audit
+**Goal**: Verify PWA meets standards
+
+1. Open Chrome DevTools
+2. Navigate to **Lighthouse** tab
+3. Select "Progressive Web App" category
+4. Click "Generate report"
+5. **Expected** (minimum scores):
+   - PWA score: ≥ 90/100
+   - ✅ Registers a service worker
+   - ✅ Responds with 200 when offline
+   - ✅ Has a web app manifest
+   - ✅ Uses HTTPS (production)
+   - ✅ Configured for custom splash screen
+   - ✅ Sets theme color
+
+### Test 10: Cross-Browser Compatibility
+**Goal**: Verify PWA works across browsers
+
+Test on each browser:
+- **Chrome/Edge**: Full PWA support ✅
+- **Firefox**: Service worker works, limited install ⚠️
+- **Safari (iOS)**: Service worker + Add to Home Screen ✅
+- **Samsung Internet**: Full PWA support ✅
+
+**Expected**: Core PWA features work on all major browsers
+
+### Test 11: Online Status Indicator
+**Goal**: Verify online/offline status detection
+
+1. Add an element with `id="online-status"` to test
+2. Visit site while online
+3. Disconnect network (DevTools offline or airplane mode)
+4. Reconnect network
+5. **Expected**:
+   - Status indicator updates when going offline
+   - Status indicator updates when going online
+   - Class toggles between `.online` and `.offline`
+
+---
+
+## Final Checklist
+
+After completing all tests, verify:
+
+1. ✅ CSS caching works with version parameter
+2. ✅ All pages have complete Open Graph tags
+3. ✅ No new PHP errors in logs
+4. ✅ All security features are documented
+5. ✅ Site remains mobile-friendly and performant
+6. ✅ PWA manifest is valid and accessible
+7. ✅ Service worker registers and activates correctly
+8. ✅ PWA can be installed on desktop and mobile
+9. ✅ Offline functionality works for cached pages
+10. ✅ Lighthouse PWA score ≥ 90/100
+
+---
+
+**Last Updated**: PWA features added on 2026-01-14  
 **Tested By**: (Add name after testing)  
 **Test Results**: (Add pass/fail status)
