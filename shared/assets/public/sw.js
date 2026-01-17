@@ -10,9 +10,9 @@ const OFFLINE_URL = '/offline.html';
 const PRECACHE_ASSETS = [
   '/',
   '/offline.html',
-  '/assets/css/style.css',
-  '/assets/js/main.js',
-  '/assets/logo/babixGO-logo-hell.png'
+  '/shared/assets/css/style.css',
+  '/shared/assets/js/main.js',
+  '/shared/assets/logo/babixGO-logo-hell.png'
 ];
 
 // Installation: Precache kritische Assets

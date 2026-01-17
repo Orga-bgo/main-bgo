@@ -7,7 +7,7 @@
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="babixGO" />
-<meta property="og:image" content="https://babixgo.de/assets/img/og-default.jpg" />
+<meta property="og:image" content="https://babixgo.de/shared/assets/img/og-default.jpg" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://babixgo.de/assets/img/og-default.jpg" />
+<meta name="twitter:image" content="https://babixgo.de/shared/assets/img/og-default.jpg" />

@@ -842,7 +842,7 @@
   // Service Worker Registrierung für PWA
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/public/sw.js')
+      navigator.serviceWorker.register('/shared/assets/public/sw.js')
         .then((registration) => {
           console.log('Service Worker registriert:', registration.scope);
         })
