@@ -29,7 +29,8 @@ if (!function_exists('load_structured_data')) {
         }
         
         // Base directory for structured data files (relative to this partial)
-        $base_dir = dirname(__DIR__) . '/shared/assets/js/structured-data/';
+        // This partial is in /shared/partials/, so go up two levels to root
+        $base_dir = dirname(dirname(__DIR__)) . '/shared/assets/js/structured-data/';
         
         foreach ($files as $filename) {
             // Skip empty filenames
