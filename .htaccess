@@ -23,16 +23,14 @@ ErrorDocument 404 /404.php
   # NEW STRUCTURE REWRITES (2026-01 Restructure)
   # ==========================================
   
-  # MoGo Items: /sticker/ → mogo/items/sticker/
-  RewriteRule ^sticker/?$ mogo/items/sticker/index.php [L]
-  RewriteRule ^wuerfel/?$ mogo/items/wuerfel/index.php [L]
+  # MoGo InGame: /sticker/, /wuerfel/, /accounts/ → mogo/ingame/
+  RewriteRule ^sticker/?$ mogo/ingame/sticker/index.php [L]
+  RewriteRule ^wuerfel/?$ mogo/ingame/wuerfel/index.php [L]
+  RewriteRule ^accounts/?$ mogo/ingame/accounts/index.php [L]
   
-  # MoGo Games
-  RewriteRule ^tycoon-racers/?$ mogo/games/tycoon-racers/index.php [L]
-  RewriteRule ^partnerevents/?$ mogo/games/partnerevents/index.php [L]
-  
-  # MoGo Accounts
-  RewriteRule ^accounts/?$ mogo/accounts/index.php [L]
+  # MoGo Events: /tycoon-racers/, /partnerevents/ → mogo/events/
+  RewriteRule ^tycoon-racers/?$ mogo/events/tycoon-racers/index.php [L]
+  RewriteRule ^partnerevents/?$ mogo/events/partnerevents/index.php [L]
   
   # MoGo Guides
   RewriteRule ^anleitungen/freundschaftsbalken-fuellen/?$ mogo/guides/freundschaftsbalken-fuellen/index.php [L]

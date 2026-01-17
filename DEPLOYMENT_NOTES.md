@@ -7,9 +7,8 @@ This deployment restructures the entire repository from a flat organization to f
 ```
 /
 ├── mogo/                      # Monopoly GO in-game content
-│   ├── items/                 # Sticker, Würfel
-│   ├── games/                 # Tycoon Racers, Partnerevents
-│   ├── accounts/              # Account services
+│   ├── ingame/                # In-game items: Sticker, Würfel, Accounts
+│   ├── events/                # Events: Tycoon Racers, Partnerevents
 │   └── guides/                # MoGo-specific guides
 ├── pages/                     # Website pages
 │   ├── rechtliches/           # Impressum, Datenschutz
@@ -125,7 +124,7 @@ curl -I https://babixgo.de/sticker/
 # Expected: 200 OK
 
 # 3. Test new structure directly
-curl -I https://babixgo.de/mogo/items/sticker/index.php
+curl -I https://babixgo.de/mogo/ingame/sticker/index.php
 # Expected: 200 OK
 
 # 4. Test assets
