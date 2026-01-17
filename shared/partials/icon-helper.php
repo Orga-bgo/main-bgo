@@ -60,7 +60,7 @@ function h2_with_icon($title, $icon_name = null, $icon_class = 'icon-service') {
         return '<h2>' . htmlspecialchars($title) . '</h2>';
     }
     
-    $icon_path = '/assets/material-symbols/' . htmlspecialchars($icon_name) . '.svg';
+    $icon_path = '/shared/assets/material-symbols/' . htmlspecialchars($icon_name) . '.svg';
     
     return '<h2>' .
            '<img src="' . $icon_path . '" alt="" class="icon ' . htmlspecialchars($icon_class) . '" loading="lazy">' .

@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <?php define('BABIXGO_ROBOTS_OVERRIDE', true); ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Downloads – Alle Tools & Apps | babixGO</title>
   <meta name="description" content="Downloadbereich für babixGO: vPhoneOS, Aurora Store und babixGO App. Alles was du für Monopoly GO Freundschaftsbalken brauchst." />
@@ -17,19 +17,19 @@
   <meta name="twitter:title" content="Downloads – Alle Tools & Apps | babixGO" />
   <meta name="twitter:description" content="Downloadbereich für babixGO: vPhoneOS, Aurora Store und babixGO App." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data (site-wide) -->
   <?php
     $structured_data_files = ['organization.json', 'website.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -55,7 +55,7 @@
 
       <!-- Downloads Section -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/download.svg" class="icon icon-info" alt="" width="48" height="48">Verfügbare Downloads</h2>
+        <h2><img src="/shared/assets/material-symbols/download.svg" class="icon icon-info" alt="" width="48" height="48">Verfügbare Downloads</h2>
       </div>
       <div class="section-card">
 
@@ -109,7 +109,7 @@
       <!-- CTA Card -->
       <div class="section-card community-card">
         <div class="section-header">
-          <h2><img src="/assets/material-symbols/done-all.svg" class="icon icon-service" alt="" width="48" height="48">Alle Downloads fertig?</h2>
+          <h2><img src="/shared/assets/material-symbols/done-all.svg" class="icon icon-service" alt="" width="48" height="48">Alle Downloads fertig?</h2>
         </div>
         <p class="community-text">
           Perfekt! Folge jetzt unserer Schritt-für-Schritt Anleitung, um deinen Freundschaftsbalken zu füllen.
@@ -124,8 +124,8 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 
 </body>
 </html>

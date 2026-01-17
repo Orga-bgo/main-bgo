@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
   
   <title>Datenschutzerklärung – babixGO</title>
   <meta name="description" content="Datenschutzerklärung von babixGO – Informationen zur Datenverarbeitung gemäß DSGVO." />
@@ -14,13 +14,13 @@
   <meta name="twitter:title" content="Datenschutzerklärung – babixGO" />
   <meta name="twitter:description" content="Datenschutzerklärung von babixGO – Informationen zur Datenverarbeitung gemäß DSGVO." />
   
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <!-- DATENSCHUTZ CONTENT -->
   <main id="main-content">
@@ -44,7 +44,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/account.svg" class="icon" alt="Verantwortlicher Icon" width="24" height="24">1. Verantwortlicher
+            <img src="/shared/assets/icons/account.svg" class="icon" alt="Verantwortlicher Icon" width="24" height="24">1. Verantwortlicher
           </span>
         </h2>
         
@@ -73,7 +73,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/shield.svg" class="icon" alt="Datenerhebung Icon" width="24" height="24">2. Erhebung und Speicherung personenbezogener Daten
+            <img src="/shared/assets/icons/shield.svg" class="icon" alt="Datenerhebung Icon" width="24" height="24">2. Erhebung und Speicherung personenbezogener Daten
           </span>
         </h2>
         
@@ -105,7 +105,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/mail.svg" class="icon" alt="Kontaktaufnahme Icon" width="24" height="24">3. Kontaktaufnahme
+            <img src="/shared/assets/icons/mail.svg" class="icon" alt="Kontaktaufnahme Icon" width="24" height="24">3. Kontaktaufnahme
           </span>
         </h2>
         
@@ -135,7 +135,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Tracking Icon" width="24" height="24">4. Facebook Pixel
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Tracking Icon" width="24" height="24">4. Facebook Pixel
           </span>
         </h2>
         
@@ -171,7 +171,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Analytics Icon" width="24" height="24">5. Google Analytics
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Analytics Icon" width="24" height="24">5. Google Analytics
           </span>
         </h2>
         
@@ -206,7 +206,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Cookies Icon" width="24" height="24">6. Cookies
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Cookies Icon" width="24" height="24">6. Cookies
           </span>
         </h2>
         
@@ -232,7 +232,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/link.svg" class="icon" alt="Datenweitergabe Icon" width="24" height="24">7. Weitergabe von Daten
+            <img src="/shared/assets/icons/link.svg" class="icon" alt="Datenweitergabe Icon" width="24" height="24">7. Weitergabe von Daten
           </span>
         </h2>
         
@@ -252,7 +252,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/shield.svg" class="icon" alt="Rechte Icon" width="24" height="24">8. Ihre Rechte
+            <img src="/shared/assets/icons/shield.svg" class="icon" alt="Rechte Icon" width="24" height="24">8. Ihre Rechte
           </span>
         </h2>
         
@@ -279,7 +279,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Speicherdauer Icon" width="24" height="24">9. Speicherdauer
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Speicherdauer Icon" width="24" height="24">9. Speicherdauer
           </span>
         </h2>
         
@@ -299,7 +299,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/shield.svg" class="icon" alt="Datensicherheit Icon" width="24" height="24">10. Datensicherheit
+            <img src="/shared/assets/icons/shield.svg" class="icon" alt="Datensicherheit Icon" width="24" height="24">10. Datensicherheit
           </span>
         </h2>
         
@@ -320,7 +320,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/link.svg" class="icon" alt="Externe Links Icon" width="24" height="24">11. Externe Links
+            <img src="/shared/assets/icons/link.svg" class="icon" alt="Externe Links Icon" width="24" height="24">11. Externe Links
           </span>
         </h2>
         
@@ -344,7 +344,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Änderungen Icon" width="24" height="24">12. Änderungen der Datenschutzerklärung
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Änderungen Icon" width="24" height="24">12. Änderungen der Datenschutzerklärung
           </span>
         </h2>
         
@@ -363,7 +363,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/mail.svg" class="icon" alt="Kontakt Datenschutz Icon" width="24" height="24">13. Kontakt Datenschutz
+            <img src="/shared/assets/icons/mail.svg" class="icon" alt="Kontakt Datenschutz Icon" width="24" height="24">13. Kontakt Datenschutz
           </span>
         </h2>
         
@@ -388,7 +388,7 @@
 
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
   
   <title>Impressum – babixGO</title>
   <meta name="description" content="Impressum und Kontaktdaten von babixGO – Monopoly GO Services." />
@@ -14,13 +14,13 @@
   <meta name="twitter:title" content="Impressum – babixGO" />
   <meta name="twitter:description" content="Impressum und Kontaktdaten von babixGO – Monopoly GO Services." />
   
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <!-- IMPRESSUM CONTENT -->
   <main id="main-content">
@@ -39,7 +39,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/account.svg" class="icon" alt="Betreiber Icon" width="24" height="24">Betreiber der Website
+            <img src="/shared/assets/icons/account.svg" class="icon" alt="Betreiber Icon" width="24" height="24">Betreiber der Website
           </span>
         </h2>
         
@@ -67,7 +67,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/mail.svg" class="icon" alt="Kontakt Icon" width="24" height="24">Kontakt
+            <img src="/shared/assets/icons/mail.svg" class="icon" alt="Kontakt Icon" width="24" height="24">Kontakt
           </span>
         </h2>
         
@@ -96,7 +96,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Umsatzsteuer Icon" width="24" height="24">Umsatzsteuer-ID
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Umsatzsteuer Icon" width="24" height="24">Umsatzsteuer-ID
           </span>
         </h2>
         
@@ -118,7 +118,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/account.svg" class="icon" alt="Verantwortlich Icon" width="24" height="24">Verantwortlich für den Inhalt
+            <img src="/shared/assets/icons/account.svg" class="icon" alt="Verantwortlich Icon" width="24" height="24">Verantwortlich für den Inhalt
           </span>
         </h2>
         
@@ -140,7 +140,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Streitschlichtung Icon" width="24" height="24">EU-Streitschlichtung
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Streitschlichtung Icon" width="24" height="24">EU-Streitschlichtung
           </span>
         </h2>
         
@@ -165,7 +165,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Streitbeilegung Icon" width="24" height="24">Verbraucherstreitbeilegung
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Streitbeilegung Icon" width="24" height="24">Verbraucherstreitbeilegung
           </span>
         </h2>
         
@@ -178,7 +178,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Haftungsausschluss Icon" width="24" height="24">Haftungsausschluss
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Haftungsausschluss Icon" width="24" height="24">Haftungsausschluss
           </span>
         </h2>
         
@@ -211,7 +211,7 @@
       <section class="section-card">
         <h2>
           <span class="h2-left">
-            <img src="/assets/icons/info.svg" class="icon" alt="Disclaimer Icon" width="24" height="24">Disclaimer zu Monopoly GO
+            <img src="/shared/assets/icons/info.svg" class="icon" alt="Disclaimer Icon" width="24" height="24">Disclaimer zu Monopoly GO
           </span>
         </h2>
         
@@ -230,7 +230,7 @@
 
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 </body>
 </html>

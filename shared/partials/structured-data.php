@@ -29,7 +29,7 @@ if (!function_exists('load_structured_data')) {
         }
         
         // Base directory for structured data files (relative to this partial)
-        $base_dir = dirname(__DIR__) . '/assets/js/structured-data/';
+        $base_dir = dirname(__DIR__) . '/shared/assets/js/structured-data/';
         
         foreach ($files as $filename) {
             // Skip empty filenames

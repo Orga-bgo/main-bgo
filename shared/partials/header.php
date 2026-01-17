@@ -40,10 +40,10 @@
     
     <div class="menu-social">
       <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="whatsapp">
-        <img src="/assets/icons/whatsapp_schriftzug.svg" class="menu-social-icon" alt="Kontakt via WhatsApp" width="150" height="35">
+        <img src="/shared/assets/icons/whatsapp_schriftzug.svg" class="menu-social-icon" alt="Kontakt via WhatsApp" width="150" height="35">
       </a>
       <a href="https://www.facebook.com/share/1DC2snqois/" target="_blank" rel="noopener" class="facebook">
-        <img src="/assets/icons/facebook_schriftzug.svg" class="menu-social-icon" alt="Kontakt via Facebook" width="125" height="24">
+        <img src="/shared/assets/icons/facebook_schriftzug.svg" class="menu-social-icon" alt="Kontakt via Facebook" width="125" height="24">
       </a>
     </div>
   </div>

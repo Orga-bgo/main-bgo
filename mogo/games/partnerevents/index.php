@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Monopoly GO Partnerevent – Würfel sparen & Gewinn sichern | babixGO</title>
   <meta name="description" content="Buche zuverlässige Partner für das Monopoly GO Partnerevent. Wir übernehmen die Punkte, du sparst Würfel und Zeit." />
@@ -14,7 +14,7 @@
   <meta name="twitter:title" content="Monopoly GO Partnerevent – Würfel sparen & Gewinn sichern | babixGO" />
   <meta name="twitter:description" content="Buche zuverlässige Partner für das Monopoly GO Partnerevent. Wir übernehmen die Punkte, du sparst Würfel und Zeit." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -92,9 +92,9 @@
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -103,7 +103,7 @@
         <h1 class="welcome-title">Monopoly GO Partnerevent – Würfel sparen & Gewinn sichern</h1>
         
         <div class="partner-teaser-image">
-          <img src="/assets/img/partner/partner-teaser.png" 
+          <img src="/shared/assets/img/partner/partner-teaser.png" 
                alt="Partner Event Teaser" 
                class="js-hide-on-error" 
                fetchpriority="high"
@@ -122,7 +122,7 @@
       <div class="section-card">
         <div class="gallery" id="partnerGallery">
           <div class="gallery__main">
-            <img src="/assets/img/partner/partner-80k-1.png"
+            <img src="/shared/assets/img/partner/partner-80k-1.png"
                  alt="Abgeschlossenes Partnerevent mit 80.000 Punkten"
                  class="gallery__main-img js-hide-on-error"
                  id="galleryMainImg"
@@ -132,20 +132,20 @@
           </div>
           <div class="gallery__thumbs-wrapper">
             <div class="gallery__thumbs">
-              <button type="button" class="gallery__thumb gallery__thumb--active" data-src="/assets/img/partner/partner-80k-1.png" data-width="1080" data-height="1080">
-                <img src="/assets/img/partner/partner-80k-1.png" alt="Vorschau 1" loading="lazy" width="100" height="100">
+              <button type="button" class="gallery__thumb gallery__thumb--active" data-src="/shared/assets/img/partner/partner-80k-1.png" data-width="1080" data-height="1080">
+                <img src="/shared/assets/img/partner/partner-80k-1.png" alt="Vorschau 1" loading="lazy" width="100" height="100">
               </button>
-              <button type="button" class="gallery__thumb" data-src="/assets/img/partner/partner-80k-2.png" data-width="332" data-height="150">
-                <img src="/assets/img/partner/partner-80k-2.png" alt="Vorschau 2" loading="lazy" width="100" height="45">
+              <button type="button" class="gallery__thumb" data-src="/shared/assets/img/partner/partner-80k-2.png" data-width="332" data-height="150">
+                <img src="/shared/assets/img/partner/partner-80k-2.png" alt="Vorschau 2" loading="lazy" width="100" height="45">
               </button>
-              <button type="button" class="gallery__thumb" data-src="/assets/img/partner/partner-80k-3.png" data-width="332" data-height="150">
-                <img src="/assets/img/partner/partner-80k-3.png" alt="Vorschau 3" loading="lazy" width="100" height="45">
+              <button type="button" class="gallery__thumb" data-src="/shared/assets/img/partner/partner-80k-3.png" data-width="332" data-height="150">
+                <img src="/shared/assets/img/partner/partner-80k-3.png" alt="Vorschau 3" loading="lazy" width="100" height="45">
               </button>
-              <button type="button" class="gallery__thumb" data-src="/assets/img/partner/partner-80k-4.png" data-width="332" data-height="150">
-                <img src="/assets/img/partner/partner-80k-4.png" alt="Vorschau 4" loading="lazy" width="100" height="45">
+              <button type="button" class="gallery__thumb" data-src="/shared/assets/img/partner/partner-80k-4.png" data-width="332" data-height="150">
+                <img src="/shared/assets/img/partner/partner-80k-4.png" alt="Vorschau 4" loading="lazy" width="100" height="45">
               </button>
-              <button type="button" class="gallery__thumb" data-src="/assets/img/partner/partner-80k-5.png" data-width="350" data-height="146">
-                <img src="/assets/img/partner/partner-80k-5.png" alt="Vorschau 5" loading="lazy" width="100" height="42">
+              <button type="button" class="gallery__thumb" data-src="/shared/assets/img/partner/partner-80k-5.png" data-width="350" data-height="146">
+                <img src="/shared/assets/img/partner/partner-80k-5.png" alt="Vorschau 5" loading="lazy" width="100" height="42">
               </button>
             </div>
             <div class="gallery__nav">
@@ -164,7 +164,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/euro-symbol.svg" class="icon icon-price" alt="" width="48" height="48">Preis</h2>
+        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-price" alt="" width="48" height="48">Preis</h2>
       </div>
       <div class="section-card">
         <p>
@@ -198,12 +198,12 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/trophy.svg" class="icon icon-game" alt="" width="48" height="48">Monopoly Go Partnerevent Hauptpreis</h2>
+        <h2><img src="/shared/assets/material-symbols/trophy.svg" class="icon icon-game" alt="" width="48" height="48">Monopoly Go Partnerevent Hauptpreis</h2>
       </div>
       <div class="section-card">
         <div class="mogo-rewards-images">
           <div class="reward-item">
-            <img src="/assets/img/mogo/XLargeRollsPack.webp" 
+            <img src="/shared/assets/img/mogo/XLargeRollsPack.webp" 
                  alt="Monopoly GO 5.000 Würfel" 
                  class="js-hide-on-error" 
                  loading="lazy"
@@ -212,7 +212,7 @@
             <p class="reward-caption">5.000 Würfel</p>
           </div>
           <div class="reward-item">
-            <img src="/assets/img/mogo/hermine-token.webp" 
+            <img src="/shared/assets/img/mogo/hermine-token.webp" 
                  alt="Monopoly GO Hermine Token" 
                  class="js-hide-on-error" 
                  loading="lazy"
@@ -221,7 +221,7 @@
             <p class="reward-caption">Exklusiver Token</p>
           </div>
           <div class="reward-item">
-            <img src="/assets/img/mogo/wild_sticker.webp" 
+            <img src="/shared/assets/img/mogo/wild_sticker.webp" 
                  alt="Monopoly GO Wild Sticker" 
                  class="js-hide-on-error" 
                  loading="lazy"
@@ -233,7 +233,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Häufig gestellte Fragen (FAQ)</h2>
+        <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Häufig gestellte Fragen (FAQ)</h2>
       </div>
       <div class="section-card">
         <div class="faq-item">
@@ -347,7 +347,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/casino.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Partner buchen & Würfel sparen!</h2>
+        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Partner buchen & Würfel sparen!</h2>
       </div>
       <div class="section-card">
         <p class="intro-text u-text-center">
@@ -363,7 +363,7 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 </body>
 </html>

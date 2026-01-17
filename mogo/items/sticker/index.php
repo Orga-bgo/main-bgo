@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Monopoly GO Sticker kaufen | babixGO</title>
   <meta name="description" content="Monopoly GO Sticker kaufen bei babixGO: Alle Sterne von 1 bis 5 verfügbar. Vervollständige deine Alben schnell und zuverlässig – einfach per WhatsApp bestellen." />
@@ -14,19 +14,19 @@
   <meta name="twitter:title" content="Monopoly GO Sticker kaufen | babixGO" />
   <meta name="twitter:description" content="Monopoly GO Sticker kaufen bei babixGO: Alle Sterne von 1 bis 5 verfügbar. Vervollständige deine Alben schnell und zuverlässig." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data -->
   <?php
     $structured_data_files = ['organization.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -41,7 +41,7 @@
         </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/euro-symbol.svg" class="icon icon-price" alt="" width="48" height="48">Preisliste</h2>
+        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-price" alt="" width="48" height="48">Preisliste</h2>
       </div>
       <div class="section-card">
         <div class="content-card">
@@ -65,7 +65,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/auto-awesome.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Album vervollständigen</h2>
+        <h2><img src="/shared/assets/material-symbols/auto-awesome.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Album vervollständigen</h2>
       </div>
       <div class="section-card">
         <p>Schreib uns, welche Sticker dir fehlen – wir kümmern uns um den Rest!</p>
@@ -79,7 +79,7 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 </body>
 </html>

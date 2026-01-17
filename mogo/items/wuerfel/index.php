@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Würfel für deinen Monopoly GO-Account | BabixGO</title>
   <meta name="description" content="So bekommst du mehr Würfel in Monopoly GO: Voraussetzungen, Ablauf, sichere Methoden und Preise auf einen Blick." />
@@ -14,19 +14,19 @@
   <meta name="twitter:title" content="Würfel für deinen Monopoly GO-Account | BabixGO" />
   <meta name="twitter:description" content="So bekommst du mehr Würfel in Monopoly GO: Voraussetzungen, Ablauf, sichere Methoden und Preise auf einen Blick." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data -->
   <?php
     $structured_data_files = ['organization.json', 'website.json', 'faq-wuerfel.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -34,7 +34,7 @@
       <section class="section-card">
         <h1 class="welcome-title">Würfel für deinen Monopoly GO Account</h1>
         <div class="hero-image">
-          <img src="/assets/img/wuerfel/wuerfel-hero.jpg" 
+          <img src="/shared/assets/img/wuerfel/wuerfel-hero.jpg" 
                alt="Monopoly GO Würfel für deinen Account" 
                class="js-hide-on-error"
                fetchpriority="high">
@@ -46,7 +46,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/checklist.svg" class="icon icon-service" alt="" width="48" height="48">Voraussetzungen</h2>
+        <h2><img src="/shared/assets/material-symbols/checklist.svg" class="icon icon-service" alt="" width="48" height="48">Voraussetzungen</h2>
       </div>
       <section class="section-card">
         <p class="intro-text intro-text--left">Für alle Methoden gilt:</p>
@@ -54,14 +54,14 @@
           <li>Dein Account muss mit <strong>Facebook</strong> oder <strong>Google Play Games</strong> verknüpft sein.</li>
         </ul>
         <div class="notice-box notice-box--info u-mt-16">
-          <img src="/assets/icons/info.svg" class="notice-box__icon" alt="Hinweis">
+          <img src="/shared/assets/icons/info.svg" class="notice-box__icon" alt="Hinweis">
           <strong class="notice-box__title">Hinweis</strong>
           <p class="notice-box__text">Facebook-Zugangsdaten sind <em>nicht zwingend</em> erforderlich.</p>
         </div>
       </section>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/timeline.svg" class="icon icon-service" alt="" width="48" height="48">Ablauf</h2>
+        <h2><img src="/shared/assets/material-symbols/timeline.svg" class="icon icon-service" alt="" width="48" height="48">Ablauf</h2>
       </div>
       <section class="section-card">
         <h3>Einrichtung der Spielumgebung</h3>
@@ -90,7 +90,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/play-circle.svg" class="icon icon-game" alt="" width="48" height="48">Durchführung</h2>
+        <h2><img src="/shared/assets/material-symbols/play-circle.svg" class="icon icon-game" alt="" width="48" height="48">Durchführung</h2>
       </div>
       <section class="section-card">
         <p class="intro-text intro-text--left">
@@ -106,7 +106,7 @@
         </p>
         
         <div class="notice-box notice-box--warning u-mt-16">
-          <img src="/assets/icons/alert.svg" class="notice-box__icon" alt="Wichtig">
+          <img src="/shared/assets/icons/alert.svg" class="notice-box__icon" alt="Wichtig">
           <strong class="notice-box__title">Wichtig</strong>
           <p class="notice-box__text">Während der 48 Stunden solltest du dich nicht in deinem Account einloggen!</p>
         </div>
@@ -204,7 +204,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/compare-arrows.svg" class="icon icon-info" alt="" width="48" height="48">Direkter Vergleich</h2>
+        <h2><img src="/shared/assets/material-symbols/compare-arrows.svg" class="icon icon-info" alt="" width="48" height="48">Direkter Vergleich</h2>
       </div>
       <section class="section-card">
         <div class="table-responsive">
@@ -253,7 +253,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/shield-lock.svg" class="icon icon-security" alt="" width="48" height="48">Sicherheit</h2>
+        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-security" alt="" width="48" height="48">Sicherheit</h2>
       </div>
       <section class="section-card">
         <h3>Wie sperrt Scopely?</h3>
@@ -276,7 +276,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/casino.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Würfel sichern!</h2>
+        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Würfel sichern!</h2>
       </div>
       <section class="section-card">
         <p class="intro-text u-text-center">
@@ -292,7 +292,7 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 </body>
 </html>

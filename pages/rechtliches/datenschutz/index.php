@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Datenschutzerklärung – babixGO</title>
   <meta name="description" content="Datenschutzerklärung von babixGO: Erfahre, wie wir deine Daten verarbeiten und schützen. Informationen zu Cookies und deinen Rechten gemäß DSGVO." />
@@ -15,21 +15,21 @@
   <meta name="twitter:title" content="Datenschutzerklärung – babixGO" />
   <meta name="twitter:description" content="Datenschutzerklärung von babixGO: Erfahre, wie wir deine Daten verarbeiten und schützen. Informationen gemäß DSGVO." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   
   <!-- Structured Data (site-wide) -->
   <?php
     $structured_data_files = ['organization.json', 'website.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
   
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -45,7 +45,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">1. Verantwortlicher</h2>
+        <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">1. Verantwortlicher</h2>
       </div>
       <div class="section-card">
         <div class="content-card">
@@ -65,7 +65,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/shield-lock.svg" class="icon icon-security" alt="" width="48" height="48">2. Erhebung und Speicherung personenbezogener Daten</h2>
+        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-security" alt="" width="48" height="48">2. Erhebung und Speicherung personenbezogener Daten</h2>
       </div>
       <div class="section-card">
         <div class="content-card">
@@ -371,8 +371,8 @@
 
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 
 </body>
 </html>

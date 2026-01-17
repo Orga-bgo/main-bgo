@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Impressum – babixGO</title>
   <meta name="description" content="Impressum von babixGO: Vollständige Betreiberangaben, Kontaktdaten und rechtliche Informationen gemäß § 5 TMG. Monopoly GO Services aus Menden, NRW." />
@@ -15,21 +15,21 @@
   <meta name="twitter:title" content="Impressum – babixGO" />
   <meta name="twitter:description" content="Impressum von babixGO: Betreiberangaben, Kontaktdaten und rechtliche Informationen gemäß § 5 TMG." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   
   <!-- Structured Data (site-wide) -->
   <?php
     $structured_data_files = ['organization.json', 'website.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
   
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
 <!-- IMPRESSUM CONTENT -->
 <main id="main-content">
@@ -42,7 +42,7 @@
     </div>
 
     <div class="section-header">
-      <h2><img src="/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">Betreiber der Website</h2>
+      <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">Betreiber der Website</h2>
     </div>
     <div class="section-card">
       <div class="content-card">
@@ -66,7 +66,7 @@
     </div>
 
     <div class="section-header">
-      <h2><img src="/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontakt</h2>
+      <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontakt</h2>
     </div>
     <div class="section-card">
       <div class="content-card">
@@ -83,8 +83,8 @@
   </div>
 </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 
 </body>
 </html>

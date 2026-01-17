@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Kontakt – Wir helfen dir gerne | babixGO</title>
   <meta name="description" content="Kontaktiere babixGO per WhatsApp, Facebook oder E-Mail. Schneller Support für alle Monopoly GO Services – Sticker, Würfel, Events und Accounts." />
@@ -21,13 +21,13 @@
   <meta name="twitter:title" content="Kontakt – Wir helfen dir gerne | babixGO" />
   <meta name="twitter:description" content="Kontaktiere babixGO per WhatsApp, Facebook oder E-Mail. Schneller Support für Monopoly GO Services – wir antworten zügig." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content" class="contact-page">
     <?php
@@ -55,7 +55,7 @@
     <div class="contact-methods">
       <a href="https://wa.me/4915223842897" target="_blank" rel="noopener noreferrer" class="contact-method">
         <div class="contact-icon whatsapp">
-          <img src="/assets/icons/whatsapp.svg" class="contact-icon-image" alt="WhatsApp Icon" width="24" height="24">
+          <img src="/shared/assets/icons/whatsapp.svg" class="contact-icon-image" alt="WhatsApp Icon" width="24" height="24">
         </div>
         <div class="contact-info">
           <div class="contact-title">WhatsApp</div>
@@ -65,7 +65,7 @@
 
       <a href="https://www.facebook.com/share/1DC2snqois/" target="_blank" rel="noopener noreferrer" class="contact-method">
         <div class="contact-icon facebook">
-          <img src="/assets/icons/facebook.svg" class="contact-icon-image" alt="Facebook Icon" width="40" height="40">
+          <img src="/shared/assets/icons/facebook.svg" class="contact-icon-image" alt="Facebook Icon" width="40" height="40">
         </div>
         <div class="contact-info">
           <div class="contact-title">Facebook</div>
@@ -75,7 +75,7 @@
 
       <a href="mailto:info@babixgo.de" class="contact-method">
         <div class="contact-icon email">
-          <img src="/assets/icons/mail.svg" class="contact-icon-image" alt="E-Mail Icon" width="24" height="24">
+          <img src="/shared/assets/icons/mail.svg" class="contact-icon-image" alt="E-Mail Icon" width="24" height="24">
         </div>
         <div class="contact-info">
           <div class="contact-title">E-Mail</div>
@@ -86,7 +86,7 @@
 
     <div class="section-card form-section">
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontaktformular</h2>
+        <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontaktformular</h2>
       </div>
 
       <div id="statusMessage" class="status-message <?php echo $statusClass; ?><?php echo $statusMessage ? ' show' : ''; ?>" role="status" aria-live="polite" aria-atomic="true">
@@ -173,7 +173,7 @@
     </div>
   </main>
   
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 </body>
 </html>

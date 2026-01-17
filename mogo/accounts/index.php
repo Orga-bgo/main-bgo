@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <?php define('BABIXGO_ROBOTS_OVERRIDE', true); ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Monopoly GO Accounts kaufen | babixGO</title>
   <meta name="description" content="Monopoly GO Accounts mit vielen Würfeln, Stickern und Ressourcen. Sicher verknüpft mit Facebook oder Google. Jetzt verfügbare Accounts ansehen!" />
@@ -17,20 +17,20 @@
   <meta name="twitter:title" content="Monopoly GO Accounts kaufen | babixGO" />
   <meta name="twitter:description" content="Monopoly GO Accounts mit vielen Würfeln, Stickern und Ressourcen." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data -->
   <?php
     $structured_data_files = ['organization.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
 
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -47,7 +47,7 @@
 
       <!-- CARD 2: Beispiel-Accounts -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">Beispiel-Accounts</h2>
+        <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">Beispiel-Accounts</h2>
       </div>
       <div class="section-card">
         <p class="intro-text intro-text--left intro-text--tight">
@@ -71,7 +71,7 @@
 
           <div class="account-stats">
             <div class="stat-row">
-              <img src="/assets/icons/wuerfel.svg" class="stat-icon" alt="Würfel" width="24" height="24">
+              <img src="/shared/assets/icons/wuerfel.svg" class="stat-icon" alt="Würfel" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Würfel</div>
                 <div class="stat-value">12.500</div>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/sticker.svg" class="stat-icon" alt="Sticker" width="24" height="24">
+              <img src="/shared/assets/icons/sticker.svg" class="stat-icon" alt="Sticker" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Sticker</div>
                 <div class="stat-value">850+</div>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
+              <img src="/shared/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Doppelte 5<span class="emoji" role="img" aria-label="Stern">⭐</span></div>
                 <div class="stat-value">45</div>
@@ -95,7 +95,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
+              <img src="/shared/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Doppelte 4<span class="emoji" role="img" aria-label="Stern">⭐</span></div>
                 <div class="stat-value">120</div>
@@ -103,7 +103,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/coins.svg" class="stat-icon" alt="Vermögenswert" width="24" height="24">
+              <img src="/shared/assets/icons/coins.svg" class="stat-icon" alt="Vermögenswert" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Vermögenswert</div>
                 <div class="stat-value">2.5M</div>
@@ -111,7 +111,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/shield.svg" class="stat-icon" alt="Sicherheit" width="24" height="24">
+              <img src="/shared/assets/icons/shield.svg" class="stat-icon" alt="Sicherheit" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Sperren</div>
                 <div class="stat-value">Keine</div>
@@ -146,7 +146,7 @@
 
           <div class="account-stats">
             <div class="stat-row">
-              <img src="/assets/icons/wuerfel.svg" class="stat-icon" alt="Würfel" width="24" height="24">
+              <img src="/shared/assets/icons/wuerfel.svg" class="stat-icon" alt="Würfel" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Würfel</div>
                 <div class="stat-value">25.000</div>
@@ -154,7 +154,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/sticker.svg" class="stat-icon" alt="Sticker" width="24" height="24">
+              <img src="/shared/assets/icons/sticker.svg" class="stat-icon" alt="Sticker" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Sticker</div>
                 <div class="stat-value">1.200+</div>
@@ -162,7 +162,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
+              <img src="/shared/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Doppelte 5<span class="emoji" role="img" aria-label="Stern">⭐</span></div>
                 <div class="stat-value">80</div>
@@ -170,7 +170,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
+              <img src="/shared/assets/icons/star.svg" class="stat-icon" alt="Sterne" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Doppelte 4<span class="emoji" role="img" aria-label="Stern">⭐</span></div>
                 <div class="stat-value">200</div>
@@ -178,7 +178,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/coins.svg" class="stat-icon" alt="Vermögenswert" width="24" height="24">
+              <img src="/shared/assets/icons/coins.svg" class="stat-icon" alt="Vermögenswert" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Vermögenswert</div>
                 <div class="stat-value">5.2M</div>
@@ -186,7 +186,7 @@
             </div>
 
             <div class="stat-row">
-              <img src="/assets/icons/shield.svg" class="stat-icon" alt="Sicherheit" width="24" height="24">
+              <img src="/shared/assets/icons/shield.svg" class="stat-icon" alt="Sicherheit" width="24" height="24">
               <div class="stat-content">
                 <div class="stat-label">Sperren</div>
                 <div class="stat-value">Keine</div>
@@ -207,7 +207,7 @@
 
       <!-- CARD 3: FAQ + Use Case -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Häufig gestellte Fragen</h2>
+        <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Häufig gestellte Fragen</h2>
       </div>
       <div class="section-card">
 
@@ -273,7 +273,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/mail.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt anfragen</h2>
+        <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt anfragen</h2>
       </div>
       <div class="section-card">
         <p>Interesse an einem Account? Schreib uns und erfahre, was aktuell verfügbar ist!</p>
@@ -287,8 +287,8 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 
 </body>
 </html>

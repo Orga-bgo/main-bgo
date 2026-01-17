@@ -1,1 +1,1 @@
-<script src="/assets/js/main.js" defer></script>
+<script src="/shared/assets/js/main.js" defer></script>

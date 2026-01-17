@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>Freundschaftsbalken automatisch füllen – Anleitung | babixGO</title>
   <meta name="description" content="Hol dir über 2.500 Würfel: So füllst du den Freundschaftsbalken in Monopoly GO automatisch mit der babixGO App. Schritt-für-Schritt Anleitung." />
@@ -15,19 +15,19 @@
   <meta name="twitter:title" content="Freundschaftsbalken automatisch füllen – Anleitung | babixGO" />
   <meta name="twitter:description" content="Hol dir über 2.500 Würfel: So füllst du den Freundschaftsbalken in Monopoly GO automatisch mit der babixGO App. Schritt-für-Schritt Anleitung." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data (page-specific) -->
   <?php
     $structured_data_files = ['howto-freundschaftsbalken.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -38,7 +38,7 @@
         
         <!-- Hero Image -->
         <div class="hero-image u-mt-16">
-          <img src="/assets/img/fbar/fbar-balken-4-voll.png" 
+          <img src="/shared/assets/img/fbar/fbar-balken-4-voll.png" 
                alt="Vollständig gefüllter Monopoly GO Freundschaftsbalken mit über 2.500 Würfeln Belohnung" 
                loading="eager"
                fetchpriority="high"
@@ -62,7 +62,7 @@
 
       <!-- SECTION 2: Warum? -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/favorite.svg" class="icon icon-game" alt="" width="48" height="48">Warum den Freundschaftsbalken füllen?</h2>
+        <h2><img src="/shared/assets/material-symbols/favorite.svg" class="icon icon-game" alt="" width="48" height="48">Warum den Freundschaftsbalken füllen?</h2>
       </div>
       <div class="section-card">
         <p>
@@ -116,7 +116,7 @@
 
       <!-- SECTION 3: Was du brauchst -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/checklist.svg" class="icon icon-service" alt="" width="48" height="48">Was du brauchst</h2>
+        <h2><img src="/shared/assets/material-symbols/checklist.svg" class="icon icon-service" alt="" width="48" height="48">Was du brauchst</h2>
       </div>
       <div class="section-card">
         <p class="intro-text intro-text--left">
@@ -143,7 +143,7 @@
 
       <!-- SECTION 4: Schritt-für-Schritt -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/timeline.svg" class="icon icon-service" alt="" width="48" height="48">Schritt-für-Schritt Anleitung</h2>
+        <h2><img src="/shared/assets/material-symbols/timeline.svg" class="icon icon-service" alt="" width="48" height="48">Schritt-für-Schritt Anleitung</h2>
       </div>
       <div class="section-card">
 
@@ -269,7 +269,7 @@
 
       <!-- SECTION 5: Troubleshooting als FAQ -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Tipps & Troubleshooting</h2>
+        <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Tipps & Troubleshooting</h2>
       </div>
       <div class="section-card">
 
@@ -333,7 +333,7 @@
 
       <!-- SECTION 6: Service CTA -->
       <div class="section-header">
-        <h2><img src="/assets/material-symbols/schedule.svg" class="icon icon-help" alt="" width="48" height="48">Keine Zeit oder Probleme?</h2>
+        <h2><img src="/shared/assets/material-symbols/schedule.svg" class="icon icon-help" alt="" width="48" height="48">Keine Zeit oder Probleme?</h2>
       </div>
       <div class="section-card community-card">
         <p class="community-text">
@@ -367,7 +367,7 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 </body>
 </html>
