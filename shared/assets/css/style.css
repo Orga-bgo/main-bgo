@@ -4104,3 +4104,262 @@ details[open] summary {
   max-width: 320px;
   aspect-ratio: 9 / 16;
 }
+
+
+/* ===== SERVICE CARDS SECTION (HORIZONTAL) ===== */
+
+.services-horizontal-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.services-horizontal-section .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-horizontal-section .section-header h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.services-horizontal-section .section-header p {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid Layout - kontrolliert nur Spaltenanzahl */
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* ⚠️ HINWEIS: Grid kontrolliert nur ob Cards in 1 oder 2 Spalten angezeigt werden */
+/* Der Inhalt INNERHALB jeder Card bleibt IMMER horizontal (Icon links | Text rechts)! */
+
+/* ===== CARD LAYOUT - IMMER HORIZONTAL ===== */
+.services-horizontal-section .card {
+  display: flex;
+  flex-direction: row !important; /* ⚠️ KRITISCH: IMMER horizontal - NIEMALS column! */
+  gap: 20px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  transition: box-shadow .3s, transform .3s, border-color .3s;
+  width: 100%;
+}
+
+.services-horizontal-section .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.2);
+  border-color: rgba(0, 212, 255, 0.4);
+}
+
+/* Links: Icon Container (25-30% Breite) */
+.services-horizontal-section .card-left {
+  flex: 0 0 25%; /* Desktop: 25% Breite - FEST */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+}
+
+.services-horizontal-section svg.icon-main {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Rechts: Content Container (70-75% Breite) */
+.services-horizontal-section .card-right {
+  flex: 1; /* Nimmt restliche Breite */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Zeile 1: Title + Preis nebeneinander */
+.services-horizontal-section .name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Title (H3) */
+.services-horizontal-section .label-big {
+  font-size: 20px;
+  font-weight: 600;
+  color: #E3E8EA;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  position: relative;
+  padding-bottom: 0.4rem;
+  flex: 1; /* Title nimmt verfügbaren Platz */
+}
+
+/* Title Underline Gradient */
+.services-horizontal-section .label-big::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #00d4ff,
+    transparent
+  );
+}
+
+/* Preis */
+.services-horizontal-section .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00d4ff;
+  white-space: nowrap;
+}
+
+/* Kategorie Badge */
+.services-horizontal-section .category {
+  font-size: 13px;
+  color: #8B95A0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* Beschreibung */
+.services-horizontal-section .description {
+  font-size: 14px;
+  color: #8B95A0;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+/* Button Container */
+.services-horizontal-section .download-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Mehr Info Button */
+.services-horizontal-section .dl-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background: #00d4ff;
+  color: #0f0f1e;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background .2s, transform .1s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.services-horizontal-section .dl-btn:hover {
+  background: #00b8e6;
+  transform: translateY(-2px);
+}
+
+.services-horizontal-section .dl-btn:active {
+  transform: scale(0.98);
+}
+
+.services-horizontal-section .dl-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets - Grid wird 1-spaltig */
+@media (max-width: 1024px) {
+  .service-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile - IMMER HORIZONTAL (Icon links, Text rechts) */
+@media (max-width: 780px) {
+  .services-horizontal-section .card {
+    flex-direction: row !important; /* KRITISCH: IMMER horizontal */
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .services-horizontal-section .card-left {
+    flex: 0 0 30%; /* Mobile: 30% Breite für Icon */
+    min-width: 70px; /* Mindestbreite für Icon */
+  }
+
+  .services-horizontal-section .label-big {
+    font-size: 18px;
+  }
+
+  .services-horizontal-section .category {
+    font-size: 13px;
+  }
+
+  .services-horizontal-section .description {
+    font-size: 13px;
+  }
+
+  .services-horizontal-section .dl-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .services-horizontal-section .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Extra Small Mobile - Noch kleinere Screens */
+@media (max-width: 480px) {
+  .services-horizontal-section .card {
+    flex-direction: row !important; /* KRITISCH: IMMER horizontal */
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .services-horizontal-section .card-left {
+    flex: 0 0 28%; /* Etwas schmaler auf sehr kleinen Screens */
+    min-width: 60px;
+  }
+
+  .services-horizontal-section .label-big {
+    font-size: 16px;
+  }
+
+  .services-horizontal-section .price {
+    font-size: 18px;
+  }
+
+  .services-horizontal-section .description {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .services-horizontal-section .dl-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

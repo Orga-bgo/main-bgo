@@ -40,6 +40,137 @@
         </p>
       </div>
 
+      <!-- ===== SERVICE CARDS SECTION (HORIZONTAL) ===== -->
+      <section class="services-horizontal-section" id="services">
+        <div class="section-header">
+          <h2>Unsere Premium Services</h2>
+          <p>Alles für dein perfektes Monopoly Go Erlebnis</p>
+        </div>
+
+        <div class="service-cards-grid">
+          
+          <!-- CARD 1: Würfel -->
+          <div class="card">
+            <div class="card-left">
+              <svg class="icon-main" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="#00d4ff" opacity="0.2"/>
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                <circle cx="12" cy="12" r="2" fill="#00d4ff"/>
+              </svg>
+            </div>
+            <div class="card-right">
+              <div class="name-row">
+                <h3 class="label-big">Würfel Pakete</h3>
+                <span class="price">ab 9,99€</span>
+              </div>
+              <span class="category">Premium Würfel</span>
+              <div class="description">
+                Hochwertige Würfel-Pakete für maximalen Spielspaß. Sofortige Lieferung und beste Preise garantiert.
+              </div>
+              <div class="download-row">
+                <button class="dl-btn" onclick="window.location.href='/wuerfel/'">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="currentColor"/>
+                  </svg>
+                  Mehr erfahren
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: Partnerevents -->
+          <div class="card">
+            <div class="card-left">
+              <svg class="icon-main" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="#00d4ff" opacity="0.2"/>
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                <path d="M7 10h10M7 14h7" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-right">
+              <div class="name-row">
+                <h3 class="label-big">Partnerevents</h3>
+                <span class="price">ab 4,99€</span>
+              </div>
+              <span class="category">Events</span>
+              <div class="description">
+                Exklusive Partnerevent-Tokens für besondere Belohnungen und limitierte Items im Spiel.
+              </div>
+              <div class="download-row">
+                <button class="dl-btn" onclick="window.location.href='/partnerevents/'">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="currentColor"/>
+                  </svg>
+                  Mehr erfahren
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: Accounts -->
+          <div class="card">
+            <div class="card-left">
+              <svg class="icon-main" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="#00d4ff" opacity="0.2"/>
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                <circle cx="12" cy="10" r="3" fill="#00d4ff"/>
+                <path d="M7 17c0-2 2-3 5-3s5 1 5 3" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-right">
+              <div class="name-row">
+                <h3 class="label-big">Premium Accounts</h3>
+                <span class="price">ab 19,99€</span>
+              </div>
+              <span class="category">Accounts</span>
+              <div class="description">
+                Fertig aufgebaute Premium-Accounts mit hohen Levels und exklusiven Items. Sofort spielbereit.
+              </div>
+              <div class="download-row">
+                <button class="dl-btn" onclick="window.location.href='/accounts/'">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="currentColor"/>
+                  </svg>
+                  Mehr erfahren
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4: Sticker -->
+          <div class="card">
+            <div class="card-left">
+              <svg class="icon-main" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="#00d4ff" opacity="0.2"/>
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                <circle cx="9" cy="9" r="1.5" fill="#00d4ff"/>
+                <circle cx="15" cy="9" r="1.5" fill="#00d4ff"/>
+                <path d="M8 15c1 1 2 1.5 4 1.5s3-.5 4-1.5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-right">
+              <div class="name-row">
+                <h3 class="label-big">Sticker Pakete</h3>
+                <span class="price">ab 2,99€</span>
+              </div>
+              <span class="category">Sammelitems</span>
+              <div class="description">
+                Vervollständige deine Sticker-Sammlung mit unseren exklusiven Paketen. Alle Seltenheitsstufen verfügbar.
+              </div>
+              <div class="download-row">
+                <button class="dl-btn" onclick="window.location.href='/sticker/'">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="currentColor"/>
+                  </svg>
+                  Mehr erfahren
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <!-- CARD 2: Services -->
       <section class="services-section">
         <div class="section-header">
