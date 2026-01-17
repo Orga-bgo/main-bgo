@@ -1127,6 +1127,7 @@ small {
 
   .content-card-inner {
     gap: 16px;
+    align-items: center;
   }
 }
 
