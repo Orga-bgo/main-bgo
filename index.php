@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-meta.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
 
   <title>babixGO – Monopoly GO Services | Sticker, Events &amp; Accounts</title>
   <meta name="description" content="babixGO bietet Monopoly GO Services: Sticker, Partnerevents, Racers &amp; Accounts. Direkt per WhatsApp erreichbar – schnell, zuverlässig, fair." />
@@ -15,19 +15,19 @@
   <meta name="twitter:title" content="babixGO – Monopoly GO Services | Sticker, Events &amp; Accounts" />
   <meta name="twitter:description" content="babixGO bietet Monopoly GO Services: Sticker, Partnerevents, Racers &amp; Accounts. Direkt per WhatsApp erreichbar – schnell, zuverlässig, fair." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head-links.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data (site-wide) -->
   <?php
     $structured_data_files = ['organization.json', 'website.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/partials/structured-data.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/header.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
     <div class="box">
@@ -43,7 +43,7 @@
       <!-- CARD 2: Services -->
       <section class="services-section">
         <div class="section-header">
-          <h2><img src="/assets/material-symbols/star.svg" class="icon icon-service" alt="" width="48" height="48">Unsere Services</h2>
+          <h2><img src="/shared/assets/material-symbols/star.svg" class="icon icon-service" alt="" width="48" height="48">Unsere Services</h2>
         </div>
 
         <!-- Content Card: Würfel -->
@@ -172,7 +172,7 @@
       <!-- CARD 3: Contact & Support -->
       <section class="contact-section">
         <div class="section-header">
-          <h2><img src="/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontakt</h2>
+          <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontakt</h2>
         </div>
 
         <div class="content-card">
@@ -183,10 +183,10 @@
             </p>
             <div class="contact-buttons-horizontal">
               <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="contact-button contact-button--whatsapp">
-                <img src="/assets/icons/whatsapp_schriftzug.svg" alt="WhatsApp" width="150" height="35" loading="lazy">
+                <img src="/shared/assets/icons/whatsapp_schriftzug.svg" alt="WhatsApp" width="150" height="35" loading="lazy">
               </a>
               <a href="https://www.facebook.com/share/1DC2snqois/" target="_blank" rel="noopener" class="contact-button contact-button--facebook">
-                <img src="/assets/icons/facebook_schriftzug.svg" alt="Facebook" width="125" height="24" loading="lazy">
+                <img src="/shared/assets/icons/facebook_schriftzug.svg" alt="Facebook" width="125" height="24" loading="lazy">
               </a>
             </div>
           </div>
@@ -198,10 +198,10 @@
             </p>
             <div class="contact-buttons-horizontal">
               <a href="mailto:info@babixgo.de" class="contact-button">
-                <img src="/assets/icons/mail_schriftzug.svg" alt="E-Mail" width="100" height="30" loading="lazy">
+                <img src="/shared/assets/icons/mail_schriftzug.svg" alt="E-Mail" width="100" height="30" loading="lazy">
               </a>
               <a href="/kontakt/" class="contact-button">
-                <img src="/assets/icons/formular_schriftzug.svg" alt="Kontaktformular" width="150" height="45" loading="lazy">
+                <img src="/shared/assets/icons/formular_schriftzug.svg" alt="Kontaktformular" width="150" height="45" loading="lazy">
               </a>
             </div>
           </div>
@@ -211,8 +211,8 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer-scripts.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
 
 </body>
 </html>
