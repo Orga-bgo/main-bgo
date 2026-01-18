@@ -349,14 +349,6 @@ try {
     // E-Mails versenden (Admin + User)
     $emailResults = sendNotificationEmails($name, $email, $whatsapp, $message, $ipAddress);
 
-    // Optional: Warnung loggen wenn E-Mails fehlschlagen
-    if (!$emailResults['admin_sent']) {
-        error_log('WARNING: Admin notification email failed to send');
-    }
-    if (!$emailResults['user_sent']) {
-        error_log('WARNING: User confirmation email failed to send');
-    }
-
     // Erfolg (auch wenn E-Mails fehlschlagen - Daten sind in DB)
     respondWithStatus($expectsJson, 'success', 'Nachricht erfolgreich gesendet!', 200);
 
