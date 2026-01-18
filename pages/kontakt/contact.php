@@ -47,6 +47,158 @@ function sanitizeHeaderValue(string $value): string
     return preg_replace('/[\r\n]+/', '', $value);
 }
 
+/**
+ * Sendet E-Mails an Admin und User
+ * 
+ * @param string $name Name des Users
+ * @param string $email E-Mail des Users
+ * @param string|null $whatsapp WhatsApp-Nummer (optional)
+ * @param string $message Nachricht
+ * @param string $ipAddress IP-Adresse
+ * @return array ['admin_sent' => bool, 'user_sent' => bool]
+ */
+function sendNotificationEmails(string $name, string $email, ?string $whatsapp, string $message, string $ipAddress): array {
+    $safeName = sanitizeHeaderValue($name);
+    $safeEmail = sanitizeHeaderValue($email);
+    
+    $results = [
+        'admin_sent' => false,
+        'user_sent' => false
+    ];
+    
+    // Admin email address
+    $adminEmail = 'info@babixgo.de';
+    
+    // ==========================================
+    // ADMIN-E-MAIL
+    // ==========================================
+    $adminSubject = 'Neue Kontaktanfrage von ' . $safeName;
+    $adminMessage = "
+═══════════════════════════════════════
+  NEUE KONTAKTANFRAGE - babixGO
+═══════════════════════════════════════
+
+📅 Datum: " . date('d.m.Y H:i') . " Uhr
+
+👤 KONTAKTDATEN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name:     $name
+E-Mail:   $email
+WhatsApp: " . ($whatsapp ?: 'Nicht angegeben') . "
+
+💬 NACHRICHT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+$message
+
+🖥️  TECHNISCHE DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IP-Adresse: " . $ipAddress . "
+User-Agent: " . htmlspecialchars(substr($_SERVER['HTTP_USER_AGENT'] ?? 'unknown', 0, 100), ENT_QUOTES, 'UTF-8') . "
+
+═══════════════════════════════════════
+  Über Admin-Panel bearbeiten:
+  https://babixgo.de/kontakt/admin/
+═══════════════════════════════════════
+";
+
+    $adminHeaders = "From: Kontaktformular <noreply@babixgo.de>\r\n";
+    $adminHeaders .= "Reply-To: $safeEmail\r\n";
+    $adminHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    
+    $results['admin_sent'] = @mail($adminEmail, $adminSubject, $adminMessage, $adminHeaders);
+    
+    // ==========================================
+    // USER-BESTÄTIGUNGS-E-MAIL
+    // ==========================================
+    $userSubject = 'Deine Nachricht bei babixGO wurde empfangen';
+    $userMessage = "
+Hallo $name,
+
+vielen Dank für deine Nachricht! 🎉
+
+Wir haben deine Anfrage erfolgreich erhalten und werden uns so schnell wie möglich bei dir melden – in der Regel innerhalb von 24 Stunden.
+
+═══════════════════════════════════════
+  DEINE NACHRICHT
+═══════════════════════════════════════
+
+Name:     $name
+E-Mail:   $email" . ($whatsapp ? "\nWhatsApp: $whatsapp" : "") . "
+
+Nachricht:
+$message
+
+═══════════════════════════════════════
+
+⚡ SCHNELLERE ANTWORT GEWÜNSCHT?
+───────────────────────────────────────
+Für dringende Anfragen empfehlen wir unseren WhatsApp-Support:
+👉 https://wa.me/4915223842897
+
+Dort antworten wir meist innerhalb weniger Minuten!
+
+======================================
+
+NUETZLICHE LINKS
+--------------------------------------
+Startseite:      https://babixgo.de
+Sticker Service: https://babixgo.de/sticker/
+Partner Events:  https://babixgo.de/partnerevents/
+Racers:          https://babixgo.de/racers/
+
+======================================
+
+Beste Grüße
+Dein babixGO Team
+
+---
+babixGO - Monopoly GO Services
+Website:  https://babixgo.de
+WhatsApp: +49 152 23842897
+E-Mail:   info@babixgo.de
+";
+
+    $userHeaders = "From: babixGO Support <$adminEmail>\r\n";
+    $userHeaders .= "Reply-To: $adminEmail\r\n";
+    $userHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+    // Sende Bestätigungs-E-Mail an den Nutzer mit Fehlererfassung
+    $userMailError = null;
+    $previousErrorHandler = set_error_handler(function (int $errno, string $errstr) use (&$userMailError): bool {
+        // Nur Fehler von mail() abfangen, ohne globale Error-Handling-Logik zu verändern
+        $userMailError = sprintf('mail() warning [%d]: %s', $errno, $errstr);
+        // Fehler als "behandelt" markieren, damit sie nicht ausgegeben werden
+        return true;
+    });
+
+    $results['user_sent'] = mail($safeEmail, $userSubject, $userMessage, $userHeaders);
+
+    if ($previousErrorHandler !== null) {
+        restore_error_handler();
+    } else {
+        // Falls kein vorheriger Handler existierte, stelle den Standard-Handler wieder her
+        restore_error_handler();
+    }
+
+    if (!$results['user_sent']) {
+        error_log(sprintf(
+            'Contact form user email FAILED (to: %s)%s',
+            $safeEmail,
+            $userMailError !== null ? ' - ' . $userMailError : ''
+        ));
+    }
+    
+    // Log E-Mail-Versand-Status
+    error_log(sprintf(
+        'Contact form emails sent - Admin: %s, User: %s (to: %s)',
+        $results['admin_sent'] ? 'SUCCESS' : 'FAILED',
+        $results['user_sent'] ? 'SUCCESS' : 'FAILED',
+        $safeEmail
+    ));
+    
+    return $results;
+}
+
 $contentType = $_SERVER['CONTENT_TYPE'] ?? '';
 $accept = $_SERVER['HTTP_ACCEPT'] ?? '';
 $expectsJson = stripos($contentType, 'application/json') !== false
@@ -218,24 +370,10 @@ try {
         ':user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'unknown'
     ]);
 
-    // Optional: E-Mail-Benachrichtigung
-    $to = 'info@babixgo.de';
-    $safeName = sanitizeHeaderValue($name);
-    $safeEmail = sanitizeHeaderValue($email);
-    $subject = 'Neue Kontaktanfrage von ' . $safeName;
-    $email_message = "Neue Kontaktanfrage:\n\n";
-    $email_message .= "Name: $name\n";
-    $email_message .= "E-Mail: $email\n";
-    $email_message .= "WhatsApp: " . ($whatsapp ?: 'Nicht angegeben') . "\n\n";
-    $email_message .= "Nachricht:\n$message\n";
-    
-    $replyTo = $safeEmail;
-    $headers = "From: noreply@babixgo.de\r\n";
-    $headers .= "Reply-To: $replyTo\r\n";
-    
-    @mail($to, $subject, $email_message, $headers);
+    // E-Mails versenden (Admin + User)
+    $emailResults = sendNotificationEmails($name, $email, $whatsapp, $message, $ipAddress);
 
-    // Erfolg
+    // Erfolg (auch wenn E-Mails fehlschlagen - Daten sind in DB)
     respondWithStatus($expectsJson, 'success', 'Nachricht erfolgreich gesendet!', 200);
 
 } catch (PDOException $e) {
