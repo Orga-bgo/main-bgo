@@ -47,14 +47,14 @@
       $statusClass = $status === 'success' ? 'success' : 'error';
     }
     ?>
-    <div class="contact-hero">
-      <h1 class="welcome-title">Kontakt</h1>
+    <div class="contact-hero fade-in-scroll">
+      <h1 class="welcome-title text-gradient">Kontakt</h1>
       <p class="intro-text">Über folgende Wege kannst du uns erreichen</p>
     </div>
 
     <div class="contact-methods">
-      <a href="https://wa.me/4915223842897" target="_blank" rel="noopener noreferrer" class="contact-method">
-        <div class="contact-icon whatsapp">
+      <a href="https://wa.me/4915223842897" target="_blank" rel="noopener noreferrer" class="contact-method scale-hover">
+        <div class="contact-icon whatsapp icon-glow">
           <img src="/shared/assets/icons/whatsapp.svg" class="contact-icon-image" alt="WhatsApp Icon" width="24" height="24">
         </div>
         <div class="contact-info">
@@ -63,8 +63,8 @@
         </div>
       </a>
 
-      <a href="https://www.facebook.com/share/1DC2snqois/" target="_blank" rel="noopener noreferrer" class="contact-method">
-        <div class="contact-icon facebook">
+      <a href="https://www.facebook.com/share/1DC2snqois/" target="_blank" rel="noopener noreferrer" class="contact-method scale-hover">
+        <div class="contact-icon facebook icon-glow">
           <img src="/shared/assets/icons/facebook.svg" class="contact-icon-image" alt="Facebook Icon" width="40" height="40">
         </div>
         <div class="contact-info">
@@ -73,8 +73,8 @@
         </div>
       </a>
 
-      <a href="mailto:info@babixgo.de" class="contact-method">
-        <div class="contact-icon email">
+      <a href="mailto:info@babixgo.de" class="contact-method scale-hover">
+        <div class="contact-icon email icon-glow">
           <img src="/shared/assets/icons/mail.svg" class="contact-icon-image" alt="E-Mail Icon" width="24" height="24">
         </div>
         <div class="contact-info">
@@ -84,9 +84,9 @@
       </a>
     </div>
 
-    <div class="section-card form-section">
+    <div class="section-card form-section fade-in-scroll">
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontaktformular</h2>
+        <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-glow" alt="" width="48" height="48">✉️ Kontaktformular</h2>
       </div>
 
       <div id="statusMessage" class="status-message <?php echo $statusClass; ?><?php echo $statusMessage ? ' show' : ''; ?>" role="status" aria-live="polite" aria-atomic="true">
@@ -107,7 +107,7 @@
             type="text" 
             id="name" 
             name="name" 
-            class="form-input" 
+            class="form-input input-glow" 
             placeholder="Dein Name"
             required
           />
@@ -121,7 +121,7 @@
             type="email" 
             id="email" 
             name="email" 
-            class="form-input" 
+            class="form-input input-animated" 
             placeholder="deine@email.de"
             required
           />
@@ -135,7 +135,7 @@
             type="tel" 
             id="whatsapp" 
             name="whatsapp" 
-            class="form-input" 
+            class="form-input input-glow" 
             placeholder="+49 123 456789"
           />
           <div class="form-hint">Optional – falls du per WhatsApp kontaktiert werden möchtest</div>
@@ -148,7 +148,7 @@
           <textarea 
             id="message" 
             name="message" 
-            class="form-textarea" 
+            class="form-textarea input-glow" 
             placeholder="Schreib uns deine Nachricht..."
             required
           ></textarea>
@@ -161,7 +161,7 @@
           </label>
         </div>
 
-        <button type="submit" class="form-submit" id="submitBtn">
+        <button type="submit" class="form-submit btn-premium" id="submitBtn">
           Nachricht senden
         </button>
       </form>

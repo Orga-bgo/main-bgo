@@ -99,8 +99,8 @@
   <main id="main-content">
     <div class="box">
 
-      <div class="section-card">
-        <h1 class="welcome-title">Monopoly GO Partnerevent – Würfel sparen & Gewinn sichern</h1>
+      <div class="section-card fade-in-scroll">
+        <h1 class="welcome-title text-gradient">Monopoly GO Partnerevent – Würfel sparen & Gewinn sichern</h1>
         
         <div class="partner-teaser-image">
           <img src="/shared/assets/img/partner/partner-teaser.png" 
@@ -117,9 +117,13 @@
         <p>
           <strong>Unser Service:</strong> Pro gebuchtem Platz stellen wir einen zuverlässigen Partner, der den Turm bis <strong>80.000 Punkte</strong> abschließt.
         </p>
+        <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-whatsapp-glow">
+          <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/icon-whatsapp.php'; ?>
+          WhatsApp Kontakt
+        </a>
       </div>
 
-      <div class="section-card">
+      <div class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
         <div class="gallery" id="partnerGallery">
           <div class="gallery__main">
             <img src="/shared/assets/img/partner/partner-80k-1.png"
@@ -164,9 +168,9 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-price" alt="" width="48" height="48">Preis</h2>
+        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-bounce" alt="" width="48" height="48">💰 Preis</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
         <p>
           Wir bieten zwei verschiedene Arten von Partnern an. Den <strong>"Ich mach das schon!"</strong>-Partner, der die kompletten 80.000 Punkte allein erledigt sowie den <strong>"Der Zuverlässige"</strong> – hier übernehmen wir mindestens 50% der Punkte pro Turm.
         </p>
@@ -198,9 +202,9 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/trophy.svg" class="icon icon-game" alt="" width="48" height="48">Monopoly Go Partnerevent Hauptpreis</h2>
+        <h2><img src="/shared/assets/material-symbols/trophy.svg" class="icon icon-bounce" alt="" width="48" height="48">🏆 Monopoly Go Partnerevent Hauptpreis</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
         <div class="mogo-rewards-images">
           <div class="reward-item">
             <img src="/shared/assets/img/mogo/XLargeRollsPack.webp" 
@@ -233,9 +237,9 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Häufig gestellte Fragen (FAQ)</h2>
+        <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48">❓ Häufig gestellte Fragen (FAQ)</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card fade-in-scroll" style="transition-delay: 0.4s;">
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">Warum sollte ich Partner kaufen, wenn ich das Event auch alleine schaffe?</button>
           <div class="faq-answer">
@@ -347,15 +351,16 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Partner buchen & Würfel sparen!</h2>
+        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-glow" alt="" width="48" height="48">🎲 Jetzt Partner buchen & Würfel sparen!</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card glass-gradient glow-subtle fade-in-scroll">
+        <h3>Bereit loszulegen?</h3>
         <p class="intro-text u-text-center">
           Sichere dir deinen Würfelvorrat für die nächsten Monopoly GO Events – einfach, transparent und zuverlässig.
         </p>
         <div class="info-box-actions u-text-center">
-          <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-primary">
-            <span class="emoji" role="img" aria-label="Sprechblase">💬</span>Jetzt buchen per WhatsApp
+          <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-premium">
+            Jetzt Partner buchen
           </a>
         </div>
       </div>
