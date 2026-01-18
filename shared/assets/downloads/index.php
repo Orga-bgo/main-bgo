@@ -35,15 +35,15 @@
     <div class="box">
       
       <!-- Hero Card -->
-      <div class="section-card">
-        <h1 class="welcome-title">Downloads</h1>
+      <div class="section-card fade-in-scroll">
+        <h1 class="welcome-title text-gradient">Downloads</h1>
         <p class="intro-text">
           Alle Apps und Tools für unsere Anleitungen – sicher und direkt von uns bereitgestellt.
         </p>
       </div>
 
       <!-- Info Card -->
-      <div class="section-card section-card--info">
+      <div class="section-card section-card--info glow-subtle fade-in-scroll" style="transition-delay: 0.1s;">
         <div class="download-callout-header">
           <h3 class="download-callout-title">Wichtiger Hinweis</h3>
         </div>
@@ -55,9 +55,9 @@
 
       <!-- Downloads Section -->
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/download.svg" class="icon icon-info" alt="" width="48" height="48">Verfügbare Downloads</h2>
+        <h2><img src="/shared/assets/material-symbols/download.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">⬇️ </span>Verfügbare Downloads</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
 
         <h3 id="vphone">vPhoneOS</h3>
         <p>
@@ -67,7 +67,7 @@
           <strong>Braucht ihr für:</strong> Freundschaftsbalken (Android)
         </p>
         <div class="download-actions u-mt-12">
-          <a class="btn btn-primary" href="https://files.babixgo.de/apk/vphoneOS-v4-12-8.apks" rel="nofollow" download>
+          <a class="btn btn-primary btn-shimmer" href="https://files.babixgo.de/apk/vphoneOS-v4-12-8.apks" rel="nofollow" download>
             Direkt Download
           </a>
           <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.vphonegaga.titan" target="_blank" rel="noopener">
@@ -83,7 +83,7 @@
           <strong>Braucht ihr für:</strong> Freundschaftsbalken (Android); Freundschaftsbalken (Windows)
         </p>
         <div class="download-actions u-mt-12">
-          <a class="btn btn-primary" href="https://files.babixgo.de/apk/aurora-store-v71.apk" rel="nofollow" download>
+          <a class="btn btn-primary btn-shimmer" href="https://files.babixgo.de/apk/aurora-store-v71.apk" rel="nofollow" download>
             APK Download
           </a>
           <a class="btn btn-ghost" href="https://auroraoss.com" target="_blank" rel="noopener">
@@ -99,7 +99,7 @@
           <strong>Braucht ihr für:</strong> Freundschaftsbalken (Android); Freundschaftsbalken (Windows)
         </p>
         <div class="download-actions u-mt-12">
-          <a class="btn btn-primary" href="https://files.babixgo.de/apk/babixgo-fbar.apk" rel="nofollow" download>
+          <a class="btn btn-primary btn-shimmer" href="https://files.babixgo.de/apk/babixgo-fbar.apk" rel="nofollow" download>
             APK Download
           </a>
         </div>
@@ -107,15 +107,15 @@
       </div>
 
       <!-- CTA Card -->
-      <div class="section-card community-card">
+      <div class="section-card community-card glass-gradient glow-subtle fade-in-scroll" style="transition-delay: 0.3s;">
         <div class="section-header">
-          <h2><img src="/shared/assets/material-symbols/done-all.svg" class="icon icon-service" alt="" width="48" height="48">Alle Downloads fertig?</h2>
+          <h2><img src="/shared/assets/material-symbols/done-all.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">✅ </span>Alle Downloads fertig?</h2>
         </div>
         <p class="community-text">
           Perfekt! Folge jetzt unserer Schritt-für-Schritt Anleitung, um deinen Freundschaftsbalken zu füllen.
         </p>
         <div class="community-actions">
-          <a href="/anleitungen/freundschaftsbalken-fuellen/" class="btn btn-primary btn-large">
+          <a href="/anleitungen/freundschaftsbalken-fuellen/" class="btn btn-premium btn-large">
             Zur Freundschaftsbalken-Anleitung
           </a>
         </div>

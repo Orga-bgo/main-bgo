@@ -31,8 +31,8 @@
   <main id="main-content">
     <div class="box">
 
-      <section class="section-card">
-        <h1 class="welcome-title">Würfel für deinen Monopoly GO Account</h1>
+      <section class="section-card fade-in-scroll">
+        <h1 class="welcome-title text-gradient">Würfel für deinen Monopoly GO Account</h1>
         <div class="hero-image">
           <img src="/shared/assets/img/wuerfel/wuerfel-hero.jpg" 
                alt="Monopoly GO Würfel für deinen Account" 
@@ -43,12 +43,16 @@
           Ohne Würfel ist kein Fortschritt in Monopoly GO möglich – sie sind das wichtigste Werkzeug für Events und Alben. 
           Hier erfährst du, welche Möglichkeiten es gibt, ob und wie Monopoly das ahndet, Wissenswertes zum Ablauf sowie einiges mehr zum Thema Monopoly GO Würfel.
         </p>
+        <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-whatsapp-glow">
+          <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/icon-whatsapp.php'; ?>
+          WhatsApp Kontakt
+        </a>
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/checklist.svg" class="icon icon-service" alt="" width="48" height="48">Voraussetzungen</h2>
+        <h2><img src="/shared/assets/material-symbols/checklist.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">✅ </span>Voraussetzungen</h2>
       </div>
-      <section class="section-card">
+      <section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
         <p class="intro-text intro-text--left">Für alle Methoden gilt:</p>
         <ul class="list list--relaxed">
           <li>Dein Account muss mit <strong>Facebook</strong> oder <strong>Google Play Games</strong> verknüpft sein.</li>
@@ -61,9 +65,9 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/timeline.svg" class="icon icon-service" alt="" width="48" height="48">Ablauf</h2>
+        <h2><img src="/shared/assets/material-symbols/timeline.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">📋 </span>Ablauf</h2>
       </div>
-      <section class="section-card">
+      <section class="section-card fade-in-scroll" style="transition-delay: 0.2s;">
         <h3>Einrichtung der Spielumgebung</h3>
         <p>
           Wir erstellen eine speziell gesicherte Spielumgebung oder stellen eine bereits bestehende wieder her. 
@@ -90,9 +94,9 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/play-circle.svg" class="icon icon-game" alt="" width="48" height="48">Durchführung</h2>
+        <h2><img src="/shared/assets/material-symbols/play-circle.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">🎮 </span>Durchführung</h2>
       </div>
-      <section class="section-card">
+      <section class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
         <p class="intro-text intro-text--left">
           Wir bieten dir zwei verschiedene Boost-Methoden an, die sich in Geschwindigkeit, Würfelmenge und Risikoprofil unterscheiden. Wähle die Methode, die am besten zu deinen Bedürfnissen passt.
         </p>
@@ -204,9 +208,9 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/compare-arrows.svg" class="icon icon-info" alt="" width="48" height="48">Direkter Vergleich</h2>
+        <h2><img src="/shared/assets/material-symbols/compare-arrows.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">⚖️ </span>Direkter Vergleich</h2>
       </div>
-      <section class="section-card">
+      <section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.4s;">
         <div class="table-responsive">
           <table class="table">
             <thead>
@@ -253,9 +257,9 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-security" alt="" width="48" height="48">Sicherheit</h2>
+        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">🔒 </span>Sicherheit</h2>
       </div>
-      <section class="section-card">
+      <section class="section-card fade-in-scroll">
         <h3>Wie sperrt Scopely?</h3>
         <p>Monopoly sperrt Accounts nach folgendem Muster:</p>
         <ul class="list list--relaxed u-mt-12">
@@ -276,15 +280,16 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt Würfel sichern!</h2>
+        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">🎲 </span>Jetzt Würfel sichern!</h2>
       </div>
-      <section class="section-card">
+      <section class="section-card glass-gradient glow-subtle fade-in-scroll">
+        <h3>Bereit loszulegen?</h3>
         <p class="intro-text u-text-center">
           Du möchtest mehr Würfel oder hast Fragen zu den Methoden? Kontaktiere uns direkt!
         </p>
         <div class="info-box-actions u-text-center">
-          <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-primary">
-            <span class="emoji" role="img" aria-label="Sprechblase">💬</span>Jetzt per WhatsApp anfragen
+          <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-premium">
+            Jetzt Würfel anfragen
           </a>
         </div>
       </section>

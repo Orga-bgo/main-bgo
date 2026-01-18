@@ -33,8 +33,8 @@
 
   <main id="main-content">
     <div class="box">
-      <div class="section-card">
-        <h1 class="welcome-title">Datenschutz</h1>
+      <div class="section-card fade-in-scroll">
+        <h1 class="welcome-title text-gradient">Datenschutz</h1>
         <p class="intro-text">
           Stand: 10.01.2026
         </p>
@@ -45,9 +45,9 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">1. Verantwortlicher</h2>
+        <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-bounce" alt="" width="48" height="48">1. Verantwortlicher</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
         <div class="content-card">
           <div class="info-line">
             <span class="info-line-label">Name:</span>
@@ -59,15 +59,15 @@
           </div>
           <div class="info-line">
             <span class="info-line-label">E-Mail:</span>
-            <span class="info-line-value"><a href="mailto:info@babixgo.de">info@babixgo.de</a></span>
+            <span class="info-line-value"><a href="mailto:info@babixgo.de" class="link-underline">info@babixgo.de</a></span>
           </div>
         </div>
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-security" alt="" width="48" height="48">2. Erhebung und Speicherung personenbezogener Daten</h2>
+        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-glow" alt="" width="48" height="48">2. Erhebung und Speicherung personenbezogener Daten</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
         <div class="content-card">
           <h3 class="legal-subheadline">Beim Besuch der Website</h3>
           <p class="desc">
