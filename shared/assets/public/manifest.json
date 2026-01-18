@@ -13,16 +13,105 @@
   "categories": ["games", "entertainment"],
   "icons": [
     {
+      "src": "/shared/assets/img/pwa/icon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/shared/assets/img/pwa/icon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/shared/assets/img/pwa/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/shared/assets/img/pwa/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/shared/assets/img/pwa/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/shared/assets/img/pwa/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/shared/assets/img/pwa/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "/shared/assets/img/pwa/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
+      "src": "/shared/assets/img/pwa/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "/shared/assets/img/pwa/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Sticker kaufen",
+      "short_name": "Sticker",
+      "description": "Monopoly GO Sticker direkt kaufen",
+      "url": "/sticker/",
+      "icons": [
+        {
+          "src": "/shared/assets/img/pwa/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Würfel kaufen",
+      "short_name": "Würfel",
+      "description": "Monopoly GO Würfel kaufen",
+      "url": "/wuerfel/",
+      "icons": [
+        {
+          "src": "/shared/assets/img/pwa/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp Kontakt",
+      "short_name": "WhatsApp",
+      "description": "Direkt per WhatsApp kontaktieren",
+      "url": "https://wa.me/4915223842897",
+      "icons": [
+        {
+          "src": "/shared/assets/img/pwa/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }

@@ -18,7 +18,7 @@
 
   <!-- Structured Data -->
   <?php
-    $structured_data_files = ['organization.json'];
+    $structured_data_files = ['organization.json', 'service-sticker.json'];
     require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
   ?>
 </head>

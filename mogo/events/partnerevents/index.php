@@ -17,78 +17,10 @@
   <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
 
   <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "babixGO",
-    "url": "https://babixgo.de",
-    "logo": "https://babixgo.de/assets/logo/babixGO-logo-hell.png",
-    "description": "Monopoly GO Services: Sticker, Partnerevents, Racers & Accounts. Schnell, zuverlässig, fair.",
-    "foundingDate": "2024",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+49-152-23842897",
-      "contactType": "Customer Service",
-      "availableLanguage": ["de"]
-    },
-    "sameAs": [
-      "https://www.facebook.com/share/1DC2snqois/",
-      "https://wa.me/4915223842897"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Menden",
-      "addressRegion": "NRW",
-      "addressCountry": "DE"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Monopoly GO Partnerevent Service",
-    "provider": {
-      "@type": "Organization",
-      "name": "babixGO"
-    },
-    "areaServed": "DE",
-    "description": "Partner-Service für Monopoly GO Events mit 80.000 Punkten pro Partner"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Wie funktioniert das Partnerevent bei babixGO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Du buchst einen oder mehrere Slots bei uns. Wir stellen dir zuverlässige Partner, die den Turm bis 80.000 Punkte abschließen. Du sparst Würfel und bekommst trotzdem die vollen Belohnungen."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Wie viel kostet ein Partnerevent-Slot?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ein Slot kostet 8€. Bei 4 Slots zahlst du 28€ (statt 32€). Der Hauptpreis enthält 5.000 Würfel im Wert von ca. 50€."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Was bekomme ich beim Partnerevent als Belohnung?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Der Hauptpreis beinhaltet: 5.000 Würfel, exklusive Sticker, Spielmarken und weitere In-Game-Belohnungen."
-        }
-      }
-    ]
-  }
-  </script>
+  <?php
+    $structured_data_files = ['organization.json', 'service-partnerevents.json', 'faq-partnerevents-updated.json'];
+    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
+  ?>
 </head>
 
 <body>
