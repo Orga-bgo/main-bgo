@@ -161,8 +161,32 @@ E-Mail:   info@babixgo.de
     $userHeaders = "From: babixGO Support <$adminEmail>\r\n";
     $userHeaders .= "Reply-To: $adminEmail\r\n";
     $userHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
-    
-    $results['user_sent'] = @mail($safeEmail, $userSubject, $userMessage, $userHeaders);
+
+    // Sende Bestätigungs-E-Mail an den Nutzer mit Fehlererfassung
+    $userMailError = null;
+    $previousErrorHandler = set_error_handler(function (int $errno, string $errstr) use (&$userMailError): bool {
+        // Nur Fehler von mail() abfangen, ohne globale Error-Handling-Logik zu verändern
+        $userMailError = sprintf('mail() warning [%d]: %s', $errno, $errstr);
+        // Fehler als "behandelt" markieren, damit sie nicht ausgegeben werden
+        return true;
+    });
+
+    $results['user_sent'] = mail($safeEmail, $userSubject, $userMessage, $userHeaders);
+
+    if ($previousErrorHandler !== null) {
+        restore_error_handler();
+    } else {
+        // Falls kein vorheriger Handler existierte, stelle den Standard-Handler wieder her
+        restore_error_handler();
+    }
+
+    if (!$results['user_sent']) {
+        error_log(sprintf(
+            'Contact form user email FAILED (to: %s)%s',
+            $safeEmail,
+            $userMailError !== null ? ' - ' . $userMailError : ''
+        ));
+    }
     
     // Log E-Mail-Versand-Status
     error_log(sprintf(
