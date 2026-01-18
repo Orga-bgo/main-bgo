@@ -32,25 +32,24 @@
   <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
 
   <main id="main-content">
-<section class="section-card u-mt-32">
-  <h1 class="welcome-title">Anleitungen</h1>
+<section class="section-card u-mt-32 fade-in-scroll">
+  <h1 class="welcome-title text-gradient">Anleitungen</h1>
   <p class="intro-text">
     Schritt-für-Schritt Guides für Monopoly GO.
   </p>
 </section>
 
-<section class="section-card">
+<section class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
   <div class="section-header">
-    <h2><img src="/shared/assets/material-symbols/menu-book.svg" class="icon icon-service" alt="" width="48" height="48">Verfügbare Anleitungen</h2>
+    <h2><img src="/shared/assets/material-symbols/menu-book.svg" class="icon icon-bounce" alt="" width="48" height="48">📚 Verfügbare Anleitungen</h2>
   </div>
   
-  <div class="line">
-    <span>Freundschaftsbalken selber füllen</span>
-    <span class="price">
-      <a href="/anleitungen/freundschaftsbalken-fuellen/" class="link-accent link-plain">
-        Zur Anleitung →
-      </a>
-    </span>
+  <div class="content-card card-interactive">
+    <h3>Freundschaftsbalken selber füllen</h3>
+    <p>Lerne, wie du deinen Freundschaftsbalken automatisch füllst – kostenlos und Schritt-für-Schritt erklärt.</p>
+    <a href="/anleitungen/freundschaftsbalken-fuellen/" class="btn btn-primary btn-shimmer">
+      Zur Anleitung
+    </a>
   </div>
 </section>
 

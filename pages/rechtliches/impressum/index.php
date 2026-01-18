@@ -34,17 +34,17 @@
 <!-- IMPRESSUM CONTENT -->
 <main id="main-content">
   <div class="box">
-    <div class="section-card">
-      <h1 class="welcome-title">Impressum</h1>
+    <div class="section-card fade-in-scroll">
+      <h1 class="welcome-title text-gradient">Impressum</h1>
       <p class="intro-text">
         Angaben gemäß § 5 TMG (Telemediengesetz)
       </p>
     </div>
 
     <div class="section-header">
-      <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-service" alt="" width="48" height="48">Betreiber der Website</h2>
+      <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-bounce" alt="" width="48" height="48">👤 Betreiber der Website</h2>
     </div>
-    <div class="section-card">
+    <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
       <div class="content-card">
         <div class="info-line">
           <span class="info-line-label">Name:</span>
@@ -66,17 +66,17 @@
     </div>
 
     <div class="section-header">
-      <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-service" alt="" width="48" height="48">Kontakt</h2>
+      <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-glow" alt="" width="48" height="48">✉️ Kontakt</h2>
     </div>
-    <div class="section-card">
+    <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
       <div class="content-card">
         <div class="info-line">
           <span class="info-line-label">E-Mail:</span>
-          <span class="info-line-value"><a href="mailto:info@babixgo.de">info@babixgo.de</a></span>
+          <span class="info-line-value"><a href="mailto:info@babixgo.de" class="link-underline">info@babixgo.de</a></span>
         </div>
         <div class="info-line">
           <span class="info-line-label">WhatsApp:</span>
-          <span class="info-line-value"><a href="https://wa.me/4915223842897" target="_blank" rel="noopener">+49 152 23842897</a></span>
+          <span class="info-line-value"><a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="link-underline">+49 152 23842897</a></span>
         </div>
       </div>
     </div>

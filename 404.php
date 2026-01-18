@@ -39,73 +39,73 @@
 
     
 <!-- ERROR HERO -->
-<div class="error-hero">
-  <div class="dice-animation" role="img" aria-label="Würfel">🎲</div>
+<div class="error-hero fade-in-scroll">
+  <div class="dice-animation icon-pulse" role="img" aria-label="Würfel">🎲</div>
   <p class="error-code" aria-hidden="true">404</p>
-  <h1 class="error-message">Ups! Würfel ins Leere geworfen</h1>
+  <h1 class="error-message text-gradient">Ups! Würfel ins Leere geworfen</h1>
   <p class="error-submessage">
     Die gesuchte Seite existiert nicht oder wurde verschoben.
   </p>
 </div>
 
 <!-- SUGGESTIONS -->
-<section class="section-card">
+<section class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
   <div class="section-header">
-    <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Wohin möchtest du?</h2>
+    <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48">Wohin möchtest du?</h2>
   </div>
   
   <div class="error-actions">
-    <a href="/" class="error-btn error-btn-primary">
+    <a href="/" class="error-btn error-btn-primary btn-shimmer">
       <span class="emoji" role="img" aria-label="Haus">🏠</span>Zur Startseite
     </a>
-    <a href="/anleitungen/" class="error-btn error-btn-secondary">
+    <a href="/anleitungen/" class="error-btn error-btn-secondary btn-ghost">
       <span class="emoji" role="img" aria-label="Bücher">📚</span>Anleitungen
     </a>
-    <a href="/downloads/" class="error-btn error-btn-secondary">
+    <a href="/downloads/" class="error-btn error-btn-secondary btn-ghost">
       <span class="emoji" role="img" aria-label="Download">⬇️</span>Downloads
     </a>
   </div>
 </section>
 
 <!-- POPULAR PAGES -->
-<section class="section-card">
+<section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
   <div class="section-header">
-    <h2><img src="/shared/assets/material-symbols/star.svg" class="icon icon-service" alt="" width="48" height="48">Beliebte Seiten</h2>
+    <h2><img src="/shared/assets/material-symbols/star.svg" class="icon icon-bounce" alt="" width="48" height="48">Beliebte Seiten</h2>
   </div>
   
   <div class="line">
     <span>Partner-Events</span>
     <span class="price">
-      <a href="/#partner" class="link-accent">Infos & Preise</a>
+      <a href="/#partner" class="link-accent link-underline">Infos & Preise</a>
     </span>
   </div>
   
   <div class="line">
     <span>Racers</span>
     <span class="price">
-      <a href="/#racers" class="link-accent">Zum Service</a>
+      <a href="/#racers" class="link-accent link-underline">Zum Service</a>
     </span>
   </div>
   
   <div class="line">
     <span>Sticker</span>
     <span class="price">
-      <a href="/#sticker" class="link-accent">Preisübersicht</a>
+      <a href="/#sticker" class="link-accent link-underline">Preisübersicht</a>
     </span>
   </div>
   
   <div class="line">
     <span>Freundschaftsbalken Anleitung</span>
     <span class="price">
-      <a href="/anleitungen/freundschaftsbalken-fuellen/" class="link-accent">Zum Guide</a>
+      <a href="/anleitungen/freundschaftsbalken-fuellen/" class="link-accent link-underline">Zum Guide</a>
     </span>
   </div>
 </section>
 
 <!-- SEARCH HELP -->
-<section class="section-card">
+<section class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
   <div class="section-header">
-    <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-help" alt="" width="48" height="48">Suchst du etwas Bestimmtes?</h2>
+    <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48">Suchst du etwas Bestimmtes?</h2>
   </div>
   
   <p class="desc">
