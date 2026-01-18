@@ -67,7 +67,7 @@ function sendNotificationEmails(string $name, string $email, ?string $whatsapp, 
     ];
     
     // Admin email address
-    $adminEmail = 'info@babixgo.de';
+    $adminEmail = 'admin@babixgo.de';
     
     // ==========================================
     // ADMIN-E-MAIL
@@ -101,7 +101,7 @@ User-Agent: " . htmlspecialchars(substr($_SERVER['HTTP_USER_AGENT'] ?? 'unknown'
 ═══════════════════════════════════════
 ";
 
-    $adminHeaders = "From: Kontaktformular <noreply@babixgo.de>\r\n";
+    $adminHeaders = "From: Kontaktformular <support@babixgo-mail.de>\r\n";
     $adminHeaders .= "Reply-To: $safeEmail\r\n";
     $adminHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
@@ -155,10 +155,10 @@ Dein babixGO Team
 babixGO - Monopoly GO Services
 Website:  https://babixgo.de
 WhatsApp: +49 152 23842897
-E-Mail:   info@babixgo.de
+E-Mail:   admin@babixgo.de
 ";
 
-    $userHeaders = "From: babixGO Support <$adminEmail>\r\n";
+    $userHeaders = "From: babixGO Support <support@babixgo-mail.de>\r\n";
     $userHeaders .= "Reply-To: $adminEmail\r\n";
     $userHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
