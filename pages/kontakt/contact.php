@@ -57,7 +57,7 @@ function sanitizeHeaderValue(string $value): string
  * @param string $ipAddress IP-Adresse
  * @return array ['admin_sent' => bool, 'user_sent' => bool]
  */
-function sendNotificationEmails($name, $email, $whatsapp, $message, $ipAddress) {
+function sendNotificationEmails(string $name, string $email, ?string $whatsapp, string $message, string $ipAddress): array {
     $safeName = sanitizeHeaderValue($name);
     $safeEmail = sanitizeHeaderValue($email);
     
@@ -65,6 +65,9 @@ function sendNotificationEmails($name, $email, $whatsapp, $message, $ipAddress) 
         'admin_sent' => false,
         'user_sent' => false
     ];
+    
+    // Admin email address
+    $adminEmail = 'info@babixgo.de';
     
     // ==========================================
     // ADMIN-E-MAIL
@@ -90,7 +93,7 @@ $message
 🖥️  TECHNISCHE DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 IP-Adresse: " . $ipAddress . "
-User-Agent: " . substr($_SERVER['HTTP_USER_AGENT'] ?? 'unknown', 0, 100) . "
+User-Agent: " . htmlspecialchars(substr($_SERVER['HTTP_USER_AGENT'] ?? 'unknown', 0, 100), ENT_QUOTES, 'UTF-8') . "
 
 ═══════════════════════════════════════
   Über Admin-Panel bearbeiten:
@@ -102,7 +105,7 @@ User-Agent: " . substr($_SERVER['HTTP_USER_AGENT'] ?? 'unknown', 0, 100) . "
     $adminHeaders .= "Reply-To: $safeEmail\r\n";
     $adminHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
-    $results['admin_sent'] = @mail('info@babixgo.de', $adminSubject, $adminMessage, $adminHeaders);
+    $results['admin_sent'] = @mail($adminEmail, $adminSubject, $adminMessage, $adminHeaders);
     
     // ==========================================
     // USER-BESTÄTIGUNGS-E-MAIL
@@ -155,8 +158,8 @@ babixGO - Monopoly GO Services
 📧 E-Mail: info@babixgo.de
 ";
 
-    $userHeaders = "From: babixGO Support <info@babixgo.de>\r\n";
-    $userHeaders .= "Reply-To: info@babixgo.de\r\n";
+    $userHeaders = "From: babixGO Support <$adminEmail>\r\n";
+    $userHeaders .= "Reply-To: $adminEmail\r\n";
     $userHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
     $results['user_sent'] = @mail($safeEmail, $userSubject, $userMessage, $userHeaders);
