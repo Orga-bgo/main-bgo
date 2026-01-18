@@ -86,7 +86,7 @@
 
     <div class="section-card form-section fade-in-scroll">
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-glow" alt="" width="48" height="48">✉️ Kontaktformular</h2>
+        <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">✉️ </span>Kontaktformular</h2>
       </div>
 
       <div id="statusMessage" class="status-message <?php echo $statusClass; ?><?php echo $statusMessage ? ' show' : ''; ?>" role="status" aria-live="polite" aria-atomic="true">

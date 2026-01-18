@@ -42,7 +42,7 @@
     </div>
 
     <div class="section-header">
-      <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-bounce" alt="" width="48" height="48">👤 Betreiber der Website</h2>
+      <h2><img src="/shared/assets/material-symbols/account-circle.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">👤 </span>Betreiber der Website</h2>
     </div>
     <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
       <div class="content-card">
@@ -66,7 +66,7 @@
     </div>
 
     <div class="section-header">
-      <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-glow" alt="" width="48" height="48">✉️ Kontakt</h2>
+      <h2><img src="/shared/assets/material-symbols/mail.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">✉️ </span>Kontakt</h2>
     </div>
     <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
       <div class="content-card">

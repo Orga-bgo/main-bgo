@@ -50,7 +50,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/checklist.svg" class="icon icon-bounce" alt="" width="48" height="48">✅ Voraussetzungen</h2>
+        <h2><img src="/shared/assets/material-symbols/checklist.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">✅ </span>Voraussetzungen</h2>
       </div>
       <section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
         <p class="intro-text intro-text--left">Für alle Methoden gilt:</p>
@@ -65,7 +65,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/timeline.svg" class="icon icon-bounce" alt="" width="48" height="48">📋 Ablauf</h2>
+        <h2><img src="/shared/assets/material-symbols/timeline.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">📋 </span>Ablauf</h2>
       </div>
       <section class="section-card fade-in-scroll" style="transition-delay: 0.2s;">
         <h3>Einrichtung der Spielumgebung</h3>
@@ -94,7 +94,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/play-circle.svg" class="icon icon-bounce" alt="" width="48" height="48">🎮 Durchführung</h2>
+        <h2><img src="/shared/assets/material-symbols/play-circle.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">🎮 </span>Durchführung</h2>
       </div>
       <section class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
         <p class="intro-text intro-text--left">
@@ -208,7 +208,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/compare-arrows.svg" class="icon icon-bounce" alt="" width="48" height="48">⚖️ Direkter Vergleich</h2>
+        <h2><img src="/shared/assets/material-symbols/compare-arrows.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">⚖️ </span>Direkter Vergleich</h2>
       </div>
       <section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.4s;">
         <div class="table-responsive">
@@ -257,7 +257,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-glow" alt="" width="48" height="48">🔒 Sicherheit</h2>
+        <h2><img src="/shared/assets/material-symbols/shield-lock.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">🔒 </span>Sicherheit</h2>
       </div>
       <section class="section-card fade-in-scroll">
         <h3>Wie sperrt Scopely?</h3>
@@ -280,7 +280,7 @@
       </section>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-glow" alt="" width="48" height="48">🎲 Jetzt Würfel sichern!</h2>
+        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">🎲 </span>Jetzt Würfel sichern!</h2>
       </div>
       <section class="section-card glass-gradient glow-subtle fade-in-scroll">
         <h3>Bereit loszulegen?</h3>

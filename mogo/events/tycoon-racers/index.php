@@ -48,7 +48,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/info.svg" class="icon icon-bounce" alt="" width="48" height="48">ℹ️ Details & Garantie</h2>
+        <h2><img src="/shared/assets/material-symbols/info.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">ℹ️ </span>Details & Garantie</h2>
       </div>
       <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
         <div class="info-line">
@@ -64,7 +64,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/groups.svg" class="icon icon-glow" alt="" width="48" height="48">👥 Jetzt beitreten</h2>
+        <h2><img src="/shared/assets/material-symbols/groups.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">👥 </span>Jetzt beitreten</h2>
       </div>
       <div class="section-card glass-gradient glow-subtle fade-in-scroll" style="transition-delay: 0.2s;">
         <h3>Bereit loszulegen?</h3>

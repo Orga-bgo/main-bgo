@@ -41,7 +41,7 @@
 
 <section class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
   <div class="section-header">
-    <h2><img src="/shared/assets/material-symbols/menu-book.svg" class="icon icon-bounce" alt="" width="48" height="48">📚 Verfügbare Anleitungen</h2>
+    <h2><img src="/shared/assets/material-symbols/menu-book.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">📚 </span>Verfügbare Anleitungen</h2>
   </div>
   
   <div class="content-card card-interactive">

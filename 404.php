@@ -58,10 +58,10 @@
     <a href="/" class="error-btn error-btn-primary btn-shimmer">
       <span class="emoji" role="img" aria-label="Haus">🏠</span>Zur Startseite
     </a>
-    <a href="/anleitungen/" class="error-btn error-btn-secondary btn-ghost">
+    <a href="/anleitungen/" class="error-btn error-btn-secondary btn-ghost-pulse">
       <span class="emoji" role="img" aria-label="Bücher">📚</span>Anleitungen
     </a>
-    <a href="/downloads/" class="error-btn error-btn-secondary btn-ghost">
+    <a href="/downloads/" class="error-btn error-btn-secondary btn-ghost-pulse">
       <span class="emoji" role="img" aria-label="Download">⬇️</span>Downloads
     </a>
   </div>

@@ -168,7 +168,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-bounce" alt="" width="48" height="48">💰 Preis</h2>
+        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">💰 </span>Preis</h2>
       </div>
       <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
         <p>
@@ -202,7 +202,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/trophy.svg" class="icon icon-bounce" alt="" width="48" height="48">🏆 Monopoly Go Partnerevent Hauptpreis</h2>
+        <h2><img src="/shared/assets/material-symbols/trophy.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">🏆 </span>Monopoly Go Partnerevent Hauptpreis</h2>
       </div>
       <div class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
         <div class="mogo-rewards-images">
@@ -237,7 +237,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48">❓ Häufig gestellte Fragen (FAQ)</h2>
+        <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">❓ </span>Häufig gestellte Fragen (FAQ)</h2>
       </div>
       <div class="section-card fade-in-scroll" style="transition-delay: 0.4s;">
         <div class="faq-item">
@@ -351,7 +351,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-glow" alt="" width="48" height="48">🎲 Jetzt Partner buchen & Würfel sparen!</h2>
+        <h2><img src="/shared/assets/material-symbols/casino.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">🎲 </span>Jetzt Partner buchen & Würfel sparen!</h2>
       </div>
       <div class="section-card glass-gradient glow-subtle fade-in-scroll">
         <h3>Bereit loszulegen?</h3>

@@ -44,7 +44,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-bounce" alt="" width="48" height="48">💰 Preisliste</h2>
+        <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">💰 </span>Preisliste</h2>
       </div>
       <div class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
         <div class="content-card card-lift">
@@ -68,7 +68,7 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/auto-awesome.svg" class="icon icon-glow" alt="" width="48" height="48">✨ Jetzt Album vervollständigen</h2>
+        <h2><img src="/shared/assets/material-symbols/auto-awesome.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">✨ </span>Jetzt Album vervollständigen</h2>
       </div>
       <div class="section-card fade-in-scroll glass-gradient glow-subtle" style="transition-delay: 0.2s;">
         <h3>Bereit loszulegen?</h3>

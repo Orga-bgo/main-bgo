@@ -55,7 +55,7 @@
 
       <!-- Downloads Section -->
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/download.svg" class="icon icon-bounce" alt="" width="48" height="48">⬇️ Verfügbare Downloads</h2>
+        <h2><img src="/shared/assets/material-symbols/download.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">⬇️ </span>Verfügbare Downloads</h2>
       </div>
       <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
 
@@ -109,7 +109,7 @@
       <!-- CTA Card -->
       <div class="section-card community-card glass-gradient glow-subtle fade-in-scroll" style="transition-delay: 0.3s;">
         <div class="section-header">
-          <h2><img src="/shared/assets/material-symbols/done-all.svg" class="icon icon-glow" alt="" width="48" height="48">✅ Alle Downloads fertig?</h2>
+          <h2><img src="/shared/assets/material-symbols/done-all.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">✅ </span>Alle Downloads fertig?</h2>
         </div>
         <p class="community-text">
           Perfekt! Folge jetzt unserer Schritt-für-Schritt Anleitung, um deinen Freundschaftsbalken zu füllen.
