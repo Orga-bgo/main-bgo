@@ -137,25 +137,25 @@ Für dringende Anfragen empfehlen wir unseren WhatsApp-Support:
 
 Dort antworten wir meist innerhalb weniger Minuten!
 
-═══════════════════════════════════════
+======================================
 
-📌 NÜTZLICHE LINKS
-───────────────────────────────────────
-🏠 Startseite:      https://babixgo.de
-📦 Sticker Service: https://babixgo.de/sticker/
-🎪 Partner Events:  https://babixgo.de/partnerevents/
-🏆 Racers:          https://babixgo.de/racers/
+NUETZLICHE LINKS
+--------------------------------------
+Startseite:      https://babixgo.de
+Sticker Service: https://babixgo.de/sticker/
+Partner Events:  https://babixgo.de/partnerevents/
+Racers:          https://babixgo.de/racers/
 
-═══════════════════════════════════════
+======================================
 
 Beste Grüße
 Dein babixGO Team
 
 ---
 babixGO - Monopoly GO Services
-🌐 https://babixgo.de
-💬 WhatsApp: +49 152 23842897
-📧 E-Mail: info@babixgo.de
+Website:  https://babixgo.de
+WhatsApp: +49 152 23842897
+E-Mail:   info@babixgo.de
 ";
 
     $userHeaders = "From: babixGO Support <$adminEmail>\r\n";
