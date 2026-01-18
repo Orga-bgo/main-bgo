@@ -31,8 +31,8 @@
   <main id="main-content">
     <div class="box">
 
-      <div class="section-card">
-        <h1 class="welcome-title">Tycoon Racers</h1>
+      <div class="section-card fade-in-scroll">
+        <h1 class="welcome-title text-gradient">Tycoon Racers</h1>
         <p class="intro-text">
           Preis gilt für einen Platz im Team. Die 3 weiteren Teammitglieder sind Accounts von uns.
           Sie sorgen dafür, dass du alle möglichen Rundenbelohnungen / Kisten erhältst.
@@ -41,12 +41,16 @@
         <p class="text-muted u-mt-16">
           Weitere Infos zu Tycoon Racers folgen in Kürze!
         </p>
+        <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-whatsapp-glow u-mt-16">
+          <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/icon-whatsapp.php'; ?>
+          WhatsApp Kontakt
+        </a>
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/info.svg" class="icon icon-info" alt="" width="48" height="48">Details & Garantie</h2>
+        <h2><img src="/shared/assets/material-symbols/info.svg" class="icon icon-bounce" alt="" width="48" height="48">ℹ️ Details & Garantie</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
         <div class="info-line">
           <span class="info-line-label">Preis je Platz</span>
           <span class="info-line-value">45 €</span>
@@ -60,13 +64,14 @@
       </div>
 
       <div class="section-header">
-        <h2><img src="/shared/assets/material-symbols/groups.svg" class="icon icon-cta" alt="" width="48" height="48">Jetzt beitreten</h2>
+        <h2><img src="/shared/assets/material-symbols/groups.svg" class="icon icon-glow" alt="" width="48" height="48">👥 Jetzt beitreten</h2>
       </div>
-      <div class="section-card">
+      <div class="section-card glass-gradient glow-subtle fade-in-scroll" style="transition-delay: 0.2s;">
+        <h3>Bereit loszulegen?</h3>
         <p>Du möchtest einen Platz in unserem Team? Kontaktiere uns direkt!</p>
         <div class="info-box-actions u-mt-16">
-          <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-primary">
-            Per WhatsApp anfragen
+          <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-premium">
+            Jetzt Team beitreten
           </a>
         </div>
       </div>
