@@ -9,6 +9,7 @@
 
 <link rel="preload" href="/shared/assets/css/style.css?v=<?php echo BABIXGO_VERSION; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 <noscript><link rel="stylesheet" href="/shared/assets/css/style.css?v=<?php echo BABIXGO_VERSION; ?>" /></noscript>
+<link rel="stylesheet" href="/shared/assets/css/babixgo-micro-interactions.css">
 
 <!-- PWA Manifest -->
 <link rel="manifest" href="/shared/assets/public/manifest.json" />
