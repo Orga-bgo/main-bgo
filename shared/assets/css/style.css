@@ -3899,3 +3899,346 @@ details[open] summary {
   max-width: 320px;
   aspect-ratio: 9 / 16;
 }
+
+/* ===== MICRO-INTERACTIONS ===== */
+
+/* Text Gradient Animation for H1 */
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--md-primary) 0%,
+    var(--md-primary-fixed-dim) 50%,
+    var(--md-tertiary) 100%
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Icon Bounce Animation */
+.icon-bounce {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.icon-bounce:hover,
+h2:hover .icon-bounce {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-8px); }
+  50% { transform: translateY(-4px); }
+  75% { transform: translateY(-6px); }
+}
+
+/* Icon Glow Animation */
+.icon-glow {
+  display: inline-block;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.icon-glow:hover,
+h2:hover .icon-glow,
+a:hover .icon-glow {
+  filter: drop-shadow(0 0 8px var(--md-primary)) drop-shadow(0 0 16px var(--md-primary));
+  transform: scale(1.05);
+}
+
+/* Icon Pulse Animation (for 404 dice) */
+.icon-pulse {
+  display: inline-block;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+/* Card Interactive Effects */
+.card-interactive {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(146, 206, 245, 0.2),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Lift Effect (for informational cards) */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(146, 206, 245, 0.15);
+}
+
+/* Fade In on Scroll */
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button Shimmer Effect */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-shimmer:hover::before {
+  left: 100%;
+}
+
+/* WhatsApp Button Glow */
+.btn-whatsapp-glow {
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp-glow:hover {
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.5),
+              0 0 40px rgba(37, 211, 102, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Premium Button */
+.btn-premium {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    var(--md-primary-container),
+    var(--md-tertiary)
+  );
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.btn-premium:hover::before {
+  left: 100%;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(146, 206, 245, 0.4);
+}
+
+/* Ghost Button Effect */
+.btn-ghost {
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-ghost::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--md-primary);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover::after {
+  opacity: 1;
+  animation: ghost-pulse 1s ease-out;
+}
+
+@keyframes ghost-pulse {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.05); opacity: 0; }
+}
+
+/* Link Underline Animation */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--md-primary);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Input Glow Effect */
+.input-glow {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-glow:focus {
+  border-color: var(--md-primary);
+  box-shadow: 0 0 0 3px rgba(146, 206, 245, 0.2);
+  outline: none;
+}
+
+/* Input Animated (for critical inputs) */
+.input-animated {
+  position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.input-animated:focus {
+  border-color: var(--md-primary);
+  box-shadow: 0 0 0 3px rgba(146, 206, 245, 0.2),
+              0 4px 12px rgba(146, 206, 245, 0.15);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Subtle Glow Effect */
+.glow-subtle {
+  box-shadow: 0 0 20px rgba(146, 206, 245, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-subtle:hover {
+  box-shadow: 0 0 30px rgba(146, 206, 245, 0.2);
+}
+
+/* Scale Hover Effect */
+.scale-hover {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scale-hover:hover {
+  transform: scale(1.02);
+}
+
+/* Gradient Animated (for community cards) */
+.gradient-animated {
+  background: linear-gradient(
+    135deg,
+    var(--md-surface-container-high),
+    var(--md-surface-container),
+    var(--md-surface-container-high)
+  );
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* Neon Border Effect */
+.neon-border {
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.neon-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    135deg,
+    var(--md-primary),
+    var(--md-tertiary),
+    var(--md-primary)
+  );
+  background-size: 200% 200%;
+  border-radius: inherit;
+  z-index: -1;
+  animation: gradient-shift 4s ease infinite;
+  opacity: 0.6;
+}
+
+/* Glass Gradient Effect */
+.glass-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(146, 206, 245, 0.1) 0%,
+    rgba(90, 140, 175, 0.05) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(146, 206, 245, 0.2);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .text-gradient,
+  .icon-bounce,
+  .icon-glow,
+  .icon-pulse,
+  .card-interactive,
+  .card-lift,
+  .fade-in-scroll,
+  .btn-shimmer,
+  .btn-whatsapp-glow,
+  .btn-premium,
+  .btn-ghost,
+  .link-underline,
+  .input-glow,
+  .input-animated,
+  .scale-hover,
+  .gradient-animated,
+  .neon-border {
+    animation: none;
+    transition: none;
+  }
+  
+  .fade-in-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
