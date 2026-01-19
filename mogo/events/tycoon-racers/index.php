@@ -115,7 +115,7 @@
           <ul style="list-style: none; padding-left: 0; margin-bottom: var(--space-lg);">
             <li style="padding: var(--space-xs) 0; padding-left: var(--space-lg); position: relative;">
               <span style="position: absolute; left: 0;">•</span>
-              Tritt keinen anderen Team bei
+              Tritt keinem anderen Team bei
             </li>
             <li style="padding: var(--space-xs) 0; padding-left: var(--space-lg); position: relative;">
               <span style="position: absolute; left: 0;">•</span>
@@ -131,7 +131,7 @@
             </li>
             <li style="padding: var(--space-sm) 0; padding-left: var(--space-lg); position: relative;">
               <span style="position: absolute; left: 0; font-size: 1.2em;">🏎️</span>
-              Pro Rennen erspielen die 3 Accounts 50.000 Punkte damit du alle Rundenbelohnungen erhältst
+              Pro Rennen erspielen die 3 Accounts 50.000 Punkte, damit du alle Rundenbelohnungen erhältst
             </li>
           </ul>
         </div>
