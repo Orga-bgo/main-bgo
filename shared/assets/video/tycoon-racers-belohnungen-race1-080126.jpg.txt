@@ -1,2 +1,0 @@
-# This is a placeholder - in production, extract a frame from the video
-# For now, we'll reference the video itself as poster or create a simple image
