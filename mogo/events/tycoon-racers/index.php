@@ -50,7 +50,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/info.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">ℹ️ </span>Details & Garantie</h2>
       </div>
-      <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
+      <div class="section-card card-lift fade-in-scroll delay-100">
         <div class="info-line">
           <span class="info-line-label">Preis je Platz</span>
           <span class="info-line-value">45 €</span>
@@ -66,7 +66,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/groups.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">👥 </span>Jetzt beitreten</h2>
       </div>
-      <div class="section-card glass-gradient glow-subtle fade-in-scroll" style="transition-delay: 0.2s;">
+      <div class="section-card glass-gradient glow-subtle fade-in-scroll delay-200">
         <h3>Bereit loszulegen?</h3>
         <p>Du möchtest einen Platz in unserem Team? Kontaktiere uns direkt!</p>
         <div class="info-box-actions u-mt-16">

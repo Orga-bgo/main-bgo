@@ -46,7 +46,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">💰 </span>Preisliste</h2>
       </div>
-      <div class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
+      <div class="section-card fade-in-scroll delay-100">
         <div class="content-card card-lift">
           <div class="info-line">
             <span class="info-line-label">1–3 Sterne Sticker</span>
@@ -70,7 +70,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/auto-awesome.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">✨ </span>Jetzt Album vervollständigen</h2>
       </div>
-      <div class="section-card fade-in-scroll glass-gradient glow-subtle" style="transition-delay: 0.2s;">
+      <div class="section-card fade-in-scroll glass-gradient glow-subtle delay-200">
         <h3>Bereit loszulegen?</h3>
         <p>Schreib uns, welche Sticker dir fehlen – wir kümmern uns um den Rest!</p>
         <div class="info-box-actions u-mt-16">

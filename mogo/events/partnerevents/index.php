@@ -55,7 +55,7 @@
         </a>
       </div>
 
-      <div class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
+      <div class="section-card fade-in-scroll delay-100">
         <div class="gallery" id="partnerGallery">
           <div class="gallery__main">
             <img src="/shared/assets/img/partner/partner-80k-1.png"
@@ -102,7 +102,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/euro-symbol.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">💰 </span>Preis</h2>
       </div>
-      <div class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
+      <div class="section-card card-lift fade-in-scroll delay-200">
         <p>
           Wir bieten zwei verschiedene Arten von Partnern an. Den <strong>"Ich mach das schon!"</strong>-Partner, der die kompletten 80.000 Punkte allein erledigt sowie den <strong>"Der Zuverlässige"</strong> – hier übernehmen wir mindestens 50% der Punkte pro Turm.
         </p>
@@ -136,7 +136,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/trophy.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">🏆 </span>Monopoly Go Partnerevent Hauptpreis</h2>
       </div>
-      <div class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
+      <div class="section-card fade-in-scroll delay-300">
         <div class="mogo-rewards-images">
           <div class="reward-item">
             <img src="/shared/assets/img/mogo/XLargeRollsPack.webp" 
@@ -171,7 +171,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48"><span aria-hidden="true">❓ </span>Häufig gestellte Fragen (FAQ)</h2>
       </div>
-      <div class="section-card fade-in-scroll" style="transition-delay: 0.4s;">
+      <div class="section-card fade-in-scroll delay-400">
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">Warum sollte ich Partner kaufen, wenn ich das Event auch alleine schaffe?</button>
           <div class="faq-answer">

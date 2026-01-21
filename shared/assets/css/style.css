@@ -3999,6 +3999,27 @@ a:hover .icon-glow {
   transform: translateY(0);
 }
 
+/* Transition Delay Utilities */
+.delay-100 {
+  transition-delay: 0.1s;
+}
+
+.delay-200 {
+  transition-delay: 0.2s;
+}
+
+.delay-300 {
+  transition-delay: 0.3s;
+}
+
+.delay-400 {
+  transition-delay: 0.4s;
+}
+
+.delay-500 {
+  transition-delay: 0.5s;
+}
+
 /* Button Shimmer Effect */
 .btn-shimmer {
   position: relative;
