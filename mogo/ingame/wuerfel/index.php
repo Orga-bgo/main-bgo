@@ -36,6 +36,8 @@
         <div class="hero-image">
           <img src="/shared/assets/img/wuerfel/wuerfel-hero.jpg" 
                alt="Monopoly GO Würfel für deinen Account" 
+               width="1456"
+               height="720"
                class="js-hide-on-error"
                fetchpriority="high">
         </div>
@@ -58,7 +60,7 @@
           <li>Dein Account muss mit <strong>Facebook</strong> oder <strong>Google Play Games</strong> verknüpft sein.</li>
         </ul>
         <div class="notice-box notice-box--info u-mt-16">
-          <img src="/shared/assets/icons/info.svg" class="notice-box__icon" alt="Hinweis">
+          <img src="/shared/assets/icons/info.svg" class="notice-box__icon" alt="Hinweis" width="24" height="24">
           <strong class="notice-box__title">Hinweis</strong>
           <p class="notice-box__text">Facebook-Zugangsdaten sind <em>nicht zwingend</em> erforderlich.</p>
         </div>
@@ -110,7 +112,7 @@
         </p>
         
         <div class="notice-box notice-box--warning u-mt-16">
-          <img src="/shared/assets/icons/alert.svg" class="notice-box__icon" alt="Wichtig">
+          <img src="/shared/assets/icons/alert.svg" class="notice-box__icon" alt="Wichtig" width="24" height="24">
           <strong class="notice-box__title">Wichtig</strong>
           <p class="notice-box__text">Während der 48 Stunden solltest du dich nicht in deinem Account einloggen!</p>
         </div>
