@@ -78,7 +78,7 @@
           </div>
 
           <!-- Service Card: Partnerevents -->
-          <div class="content-card card-interactive fade-in-scroll" style="transition-delay: 0.1s;">
+          <div class="content-card card-interactive fade-in-scroll delay-100">
             <div class="content-card-inner">
               <div class="content-card-icon">
                 <img src="/shared/assets/icons/partner.svg" alt="" width="64" height="64" loading="lazy">
@@ -110,7 +110,7 @@
           </div>
 
           <!-- Service Card: Accounts -->
-          <div class="content-card card-interactive fade-in-scroll" style="transition-delay: 0.2s;">
+          <div class="content-card card-interactive fade-in-scroll delay-200">
             <div class="content-card-inner">
               <div class="content-card-icon">
                 <img src="/shared/assets/icons/account.svg" alt="" width="64" height="64" loading="lazy">
@@ -134,7 +134,7 @@
           </div>
 
           <!-- Service Card: Tycoon Racers -->
-          <div class="content-card card-interactive fade-in-scroll" style="transition-delay: 0.3s;">
+          <div class="content-card card-interactive fade-in-scroll delay-300">
             <div class="content-card-inner">
               <div class="content-card-icon">
                 <img src="/shared/assets/icons/racers-flagge.svg" alt="" width="64" height="64" loading="lazy">
@@ -158,7 +158,7 @@
           </div>
 
           <!-- Service Card: Freundschaftsbalken -->
-          <div class="content-card card-interactive fade-in-scroll" style="transition-delay: 0.4s;">
+          <div class="content-card card-interactive fade-in-scroll delay-400">
             <div class="content-card-inner">
               <div class="content-card-icon">
                 <img src="/shared/assets/icons/freundschaft.svg" alt="" width="64" height="64" loading="lazy">
@@ -182,7 +182,7 @@
           </div>
 
           <!-- Service Card: Sticker -->
-          <div class="content-card card-interactive fade-in-scroll" style="transition-delay: 0.5s;">
+          <div class="content-card card-interactive fade-in-scroll delay-500">
             <div class="content-card-inner">
               <div class="content-card-icon">
                 <img src="/shared/assets/icons/sticker.svg" alt="" width="64" height="64" loading="lazy">

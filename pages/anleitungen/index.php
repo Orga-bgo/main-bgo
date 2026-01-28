@@ -39,7 +39,7 @@
   </p>
 </section>
 
-<section class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
+<section class="section-card fade-in-scroll delay-100">
   <div class="section-header">
     <h2><img src="/shared/assets/material-symbols/menu-book.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">📚 </span>Verfügbare Anleitungen</h2>
   </div>

@@ -36,6 +36,8 @@
         <div class="hero-image">
           <img src="/shared/assets/img/wuerfel/wuerfel-hero.jpg" 
                alt="Monopoly GO Würfel für deinen Account" 
+               width="1456"
+               height="720"
                class="js-hide-on-error"
                fetchpriority="high">
         </div>
@@ -52,13 +54,13 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/checklist.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">✅ </span>Voraussetzungen</h2>
       </div>
-      <section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.1s;">
+      <section class="section-card card-lift fade-in-scroll delay-100">
         <p class="intro-text intro-text--left">Für alle Methoden gilt:</p>
         <ul class="list list--relaxed">
           <li>Dein Account muss mit <strong>Facebook</strong> oder <strong>Google Play Games</strong> verknüpft sein.</li>
         </ul>
         <div class="notice-box notice-box--info u-mt-16">
-          <img src="/shared/assets/icons/info.svg" class="notice-box__icon" alt="Hinweis">
+          <img src="/shared/assets/icons/info.svg" class="notice-box__icon" alt="Hinweis" width="24" height="24">
           <strong class="notice-box__title">Hinweis</strong>
           <p class="notice-box__text">Facebook-Zugangsdaten sind <em>nicht zwingend</em> erforderlich.</p>
         </div>
@@ -67,7 +69,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/timeline.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">📋 </span>Ablauf</h2>
       </div>
-      <section class="section-card fade-in-scroll" style="transition-delay: 0.2s;">
+      <section class="section-card fade-in-scroll delay-200">
         <h3>Einrichtung der Spielumgebung</h3>
         <p>
           Wir erstellen eine speziell gesicherte Spielumgebung oder stellen eine bereits bestehende wieder her. 
@@ -96,7 +98,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/play-circle.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">🎮 </span>Durchführung</h2>
       </div>
-      <section class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
+      <section class="section-card fade-in-scroll delay-300">
         <p class="intro-text intro-text--left">
           Wir bieten dir zwei verschiedene Boost-Methoden an, die sich in Geschwindigkeit, Würfelmenge und Risikoprofil unterscheiden. Wähle die Methode, die am besten zu deinen Bedürfnissen passt.
         </p>
@@ -110,7 +112,7 @@
         </p>
         
         <div class="notice-box notice-box--warning u-mt-16">
-          <img src="/shared/assets/icons/alert.svg" class="notice-box__icon" alt="Wichtig">
+          <img src="/shared/assets/icons/alert.svg" class="notice-box__icon" alt="Wichtig" width="24" height="24">
           <strong class="notice-box__title">Wichtig</strong>
           <p class="notice-box__text">Während der 48 Stunden solltest du dich nicht in deinem Account einloggen!</p>
         </div>
@@ -210,7 +212,7 @@
       <div class="section-header">
         <h2><img src="/shared/assets/material-symbols/compare-arrows.svg" class="icon icon-bounce" alt="" width="48" height="48"><span aria-hidden="true">⚖️ </span>Direkter Vergleich</h2>
       </div>
-      <section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.4s;">
+      <section class="section-card card-lift fade-in-scroll delay-400">
         <div class="table-responsive">
           <table class="table">
             <thead>

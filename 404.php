@@ -49,7 +49,7 @@
 </div>
 
 <!-- SUGGESTIONS -->
-<section class="section-card fade-in-scroll" style="transition-delay: 0.1s;">
+<section class="section-card fade-in-scroll delay-100">
   <div class="section-header">
     <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48">Wohin möchtest du?</h2>
   </div>
@@ -68,7 +68,7 @@
 </section>
 
 <!-- POPULAR PAGES -->
-<section class="section-card card-lift fade-in-scroll" style="transition-delay: 0.2s;">
+<section class="section-card card-lift fade-in-scroll delay-200">
   <div class="section-header">
     <h2><img src="/shared/assets/material-symbols/star.svg" class="icon icon-bounce" alt="" width="48" height="48">Beliebte Seiten</h2>
   </div>
@@ -103,7 +103,7 @@
 </section>
 
 <!-- SEARCH HELP -->
-<section class="section-card fade-in-scroll" style="transition-delay: 0.3s;">
+<section class="section-card fade-in-scroll delay-300">
   <div class="section-header">
     <h2><img src="/shared/assets/material-symbols/help-center.svg" class="icon icon-glow" alt="" width="48" height="48">Suchst du etwas Bestimmtes?</h2>
   </div>
