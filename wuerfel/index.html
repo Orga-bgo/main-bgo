@@ -1,7 +1,55 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-meta.php'; ?>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index, follow" />
+<style>
+:root {
+  --md-background: rgb(16 20 23);
+  --md-on-surface: rgb(255 255 255);
+  --md-surface-container: rgb(36 40 44);
+  --md-on-surface-variant: rgb(183, 194, 208);
+  --md-primary-fixed-dim: rgb(146 206 245);
+  --md-outline-variant: rgb(138 145 151);
+  --zoom-scale: 0.92;
+  --space-section: calc(32px * var(--zoom-scale));
+  --space-card: calc(16px * var(--zoom-scale));
+  --padding-card: calc(20px * var(--zoom-scale));
+  --box-padding-top: calc(28px * var(--zoom-scale));
+  --box-padding-inline: calc(18px * var(--zoom-scale));
+  --box-padding-bottom: calc(32px * var(--zoom-scale));
+  --layout-max-width: calc(800px * var(--zoom-scale));
+  --header-height: calc(90px * var(--zoom-scale));
+  --bg: var(--md-background);
+  --card: var(--md-surface-container);
+  --text: var(--md-on-surface);
+  --muted: var(--md-on-surface-variant);
+  --primary: var(--md-primary-fixed-dim);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 100%; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+.box { max-width: var(--layout-max-width); margin: 0 auto; padding: var(--box-padding-top) var(--box-padding-inline) var(--box-padding-bottom); }
+.header { position: sticky; top: 0; z-index: 100; background: var(--bg); border-bottom: 1px solid var(--md-outline-variant); }
+.header-inner { display: flex; justify-content: space-between; align-items: center; height: var(--header-height); max-width: var(--layout-max-width); margin: 0 auto; padding: 0 var(--box-padding-inline); }
+.logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.logo img { height: calc(42px * var(--zoom-scale)); width: auto; }
+.section-card { background: var(--card); border-radius: 16px; padding: var(--padding-card); margin-bottom: var(--space-card); }
+.welcome-title { font-family: 'Montserrat', sans-serif; font-size: 1.75rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; text-align: center; }
+.is-hidden { display: none !important; }
+</style>
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="babixGO" />
+<meta property="og:image" content="https://babixgo.de/shared/assets/img/og-default.jpg" />
+<meta property="og:image:width" content="1400" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:alt" content="babixGO - Monopoly GO Services" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://babixgo.de/shared/assets/img/og-default.jpg" />
+<meta name="twitter:image:alt" content="babixGO - Monopoly GO Services" />
 
   <title>Würfel für deinen Monopoly GO-Account | BabixGO</title>
   <meta name="description" content="So bekommst du mehr Würfel in Monopoly GO: Voraussetzungen, Ablauf, sichere Methoden und Preise auf einen Blick." />
@@ -14,19 +62,149 @@
   <meta name="twitter:title" content="Würfel für deinen Monopoly GO-Account | BabixGO" />
   <meta name="twitter:description" content="So bekommst du mehr Würfel in Monopoly GO: Voraussetzungen, Ablauf, sichere Methoden und Preise auf einen Blick." />
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/head-links.php'; ?>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Structured Data -->
-  <?php
-    $structured_data_files = ['organization.json', 'website.json', 'faq-wuerfel.json', 'service-wuerfel.json'];
-    require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/structured-data.php';
-  ?>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500;600&display=swap" /></noscript>
+
+<link rel="preload" href="/shared/assets/css/style.css?v=2.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="/shared/assets/css/style.css?v=2.1.1" /></noscript>
+<link rel="stylesheet" href="/shared/assets/css/babixgo-micro-interactions.css">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/shared/assets/public/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="/shared/assets/public/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/shared/assets/public/favicon-32x32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/shared/assets/img/pwa/apple-touch-icon.png" />
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="/shared/assets/public/manifest.json" />
+<meta name="theme-color" content="#1a1a1a" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="babixGO" />
+
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"babixGO","url":"https://babixgo.de","logo":"https://babixgo.de/shared/assets/logo/babixGO-logo-hell.png","description":"Monopoly GO Services: Sticker, Partnerevents, Racers & Accounts. Schnell, zuverlässig, fair.","foundingDate":"2024","contactPoint":{"@type":"ContactPoint","telephone":"+49-152-23842897","contactType":"Customer Service","availableLanguage":["de"]},"sameAs":["https://www.facebook.com/share/1DC2snqois/","https://wa.me/4915223842897"],"address":{"@type":"PostalAddress","addressLocality":"Menden","addressRegion":"NRW","addressCountry":"DE"}}
+  </script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"babixGO","url":"https://babixgo.de","description":"Monopoly GO Services und Anleitungen","publisher":{"@type":"Organization","name":"babixGO"},"potentialAction":{"@type":"SearchAction","target":"https://babixgo.de/?s={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie bekomme ich mehr Würfel in Monopoly GO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es gibt zwei Methoden: Den 48h Boost für sicheres, natürliches Spielverhalten oder den Schnellen Boost für größere Mengen in kurzer Zeit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist der Würfel-Service sicher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der 48h Boost simuliert natürliches Spielverhalten und ist sehr sicher. Der Schnelle Boost birgt ein höheres Risiko und ist nur für bereits vorbelastete Accounts empfehlenswert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet der Würfel-Service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der Preis liegt zwischen 1,17€ und 2,00€ pro 1.000 Würfel beim 48h Boost. Der Schnelle Boost kostet 1,50€ pro 1.000 Würfel."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Monopoly GO Würfel Service","provider":{"@type":"Organization","name":"babixGO","url":"https://babixgo.de"},"name":"Monopoly GO Würfel","description":"Würfel für Monopoly GO kaufen. Schnelle Lieferung, faire Preise, zuverlässiger Service.","url":"https://babixgo.de/wuerfel/","areaServed":"DE","availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://wa.me/4915223842897","servicePhone":"+49-152-23842897","availableLanguage":"de"},"category":"Gaming Service","offers":{"@type":"Offer","availability":"https://schema.org/InStock","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"EUR"}}}
+  </script>
 </head>
 
 <body>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/tracking.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/cookie-banner.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/header.php'; ?>
+  <div
+  id="trackingConfig"
+  class="is-hidden"
+  data-ga-id="G-9STF8SYG7N"
+  data-fb-id="877965457871970"
+  aria-hidden="true"
+></div>
+  <div id="cookieConsent" class="cookie-consent">
+  <div class="cookie-content">
+    <p>
+      <span class="emoji" role="img" aria-label="Keks">🍪</span>Wir verwenden Cookies und ähnliche Technologien (Google Analytics, Facebook Pixel),
+      um die Nutzung unserer Website zu analysieren und zu verbessern.
+      <a href="/datenschutz/" class="cookie-link">Mehr Infos</a>
+    </p>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-accept" type="button" data-consent-action="accept">
+        Alle akzeptieren
+      </button>
+      <button class="cookie-btn cookie-btn-decline" type="button" data-consent-action="decline">
+        Nur notwendige
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="header-brand">
+    <a href="/" class="header-logo">
+      <span class="logo-babix">babix</span><span class="logo-go">GO</span>
+    </a>
+    <div class="header-tagline">Monopoly Go Würfel, Accounts und mehr!</div>
+  </div>
+  
+  <button class="menu-toggle" aria-label="Menü öffnen" aria-controls="mobileMenu" aria-expanded="false" id="menuToggle" type="button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<!-- ========== MOBILE MENU ========== -->
+<nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-inner">
+    <a href="/">Home</a>
+    <div class="menu-dropdown">
+      <button class="menu-dropdown-toggle" aria-expanded="false" type="button">
+        Angebote
+        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="menu-dropdown-content">
+        <a href="/wuerfel/">Würfel</a>
+        <a href="/partnerevents/">Partnerevents</a>
+        <a href="/accounts/">Accounts</a>
+        <a href="/tycoon-racers/">Tycoon Racers</a>
+        <a href="/anleitungen/freundschaftsbalken-fuellen/">Freundschaftsbalken</a>
+        <a href="/sticker/">Sticker</a>
+      </div>
+    </div>
+    <a href="/anleitungen/">Anleitungen</a>
+    <a href="/downloads/">Downloads</a>
+    <a href="/kontakt/">Kontakt</a>
+    
+    <div class="menu-social">
+      <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="whatsapp">
+        <img src="/shared/assets/icons/whatsapp_schriftzug.svg" class="menu-social-icon" alt="Kontakt via WhatsApp" width="150" height="35">
+      </a>
+      <a href="https://www.facebook.com/share/1DC2snqois/" target="_blank" rel="noopener" class="facebook">
+        <img src="/shared/assets/icons/facebook_schriftzug.svg" class="menu-social-icon" alt="Kontakt via Facebook" width="125" height="24">
+      </a>
+    </div>
+  </div>
+</nav>
 
   <main id="main-content">
     <div class="box">
@@ -44,7 +222,9 @@
           Hier erfährst du, welche Möglichkeiten es gibt, ob und wie Monopoly das ahndet, Wissenswertes zum Ablauf sowie einiges mehr zum Thema Monopoly GO Würfel.
         </p>
         <a href="https://wa.me/4915223842897" target="_blank" rel="noopener" class="btn btn-whatsapp-glow">
-          <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/icon-whatsapp.php'; ?>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+</svg>
           WhatsApp Kontakt
         </a>
       </section>
@@ -297,7 +477,27 @@
     </div>
   </main>
 
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer.php'; ?>
-  <?php require $_SERVER['DOCUMENT_ROOT'] . '/shared/partials/footer-scripts.php'; ?>
+  <!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-logo">
+    <span class="logo-babix">babix</span><span class="logo-go">GO</span>
+  </div>
+  
+  <div class="footer-tagline">
+    Dein Partner seit dem 1. Würfelwurf.
+  </div>
+  
+  <div class="footer-links">
+    <a href="/impressum/">Impressum</a>
+    <a href="/datenschutz/">Datenschutz</a>
+    <a href="/agb/">AGB</a>
+    <a href="/kontakt/">Kontakt</a>
+  </div>
+  
+  <div class="footer-copy">
+    © <span class="year-auto"></span> babixgo.de
+  </div>
+</footer>
+  <script src="/shared/assets/js/main.js" defer></script>
 </body>
 </html>

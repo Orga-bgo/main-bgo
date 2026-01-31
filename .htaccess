@@ -6,7 +6,7 @@
 # FEHLERSEITEN
 # ==========================================
 
-ErrorDocument 404 /404.php
+ErrorDocument 404 /404.html
 
 # ==========================================
 # URL REDIRECTS (301 - Permanent)
@@ -23,29 +23,30 @@ ErrorDocument 404 /404.php
   # NEW STRUCTURE REWRITES (2026-01 Restructure)
   # ==========================================
   
-  # MoGo InGame: /sticker/, /wuerfel/, /accounts/ → mogo/ingame/
-  RewriteRule ^sticker/?$ mogo/ingame/sticker/index.php [L]
-  RewriteRule ^wuerfel/?$ mogo/ingame/wuerfel/index.php [L]
-  RewriteRule ^accounts/?$ mogo/ingame/accounts/index.php [L]
+  # MoGo InGame: /sticker/, /wuerfel/, /accounts/
+  RewriteRule ^sticker/?$ sticker/index.html [L]
+  RewriteRule ^wuerfel/?$ wuerfel/index.html [L]
+  RewriteRule ^accounts/?$ accounts/index.html [L]
   
-  # MoGo Events: /tycoon-racers/, /partnerevents/ → mogo/events/
-  RewriteRule ^tycoon-racers/?$ mogo/events/tycoon-racers/index.php [L]
-  RewriteRule ^partnerevents/?$ mogo/events/partnerevents/index.php [L]
+  # MoGo Events: /tycoon-racers/, /partnerevents/
+  RewriteRule ^tycoon-racers/?$ tycoon-racers/index.html [L]
+  RewriteRule ^partnerevents/?$ partnerevents/index.html [L]
   
   # MoGo Guides
-  RewriteRule ^anleitungen/freundschaftsbalken-fuellen/?$ mogo/guides/freundschaftsbalken-fuellen/index.php [L]
+  RewriteRule ^anleitungen/freundschaftsbalken-fuellen/?$ anleitungen/freundschaftsbalken-fuellen/index.html [L]
   
   # Pages: Anleitungen
-  RewriteRule ^anleitungen/?$ pages/anleitungen/index.php [L]
+  RewriteRule ^anleitungen/?$ anleitungen/index.html [L]
   
   # Pages: Rechtliches
-  RewriteRule ^impressum/?$ pages/rechtliches/impressum/index.php [L]
-  RewriteRule ^datenschutz/?$ pages/rechtliches/datenschutz/index.php [L]
+  RewriteRule ^impressum/?$ impressum/index.html [L]
+  RewriteRule ^datenschutz/?$ datenschutz/index.html [L]
   
   # Pages: Kontakt
-  RewriteRule ^kontakt/?$ pages/kontakt/index.php [L]
-  RewriteRule ^kontakt/contact\.php$ pages/kontakt/contact.php [L]
-  RewriteRule ^kontakt/admin/(.*)$ pages/kontakt/admin/$1 [L]
+  RewriteRule ^kontakt/?$ kontakt/index.html [L]
+
+  # Downloads
+  RewriteRule ^downloads/?$ downloads/index.html [L]
   
   # Assets: Redirect old /assets/ to new /shared/assets/
   RewriteRule ^assets/(.*)$ /shared/assets/$1 [L]
@@ -53,19 +54,19 @@ ErrorDocument 404 /404.php
   # Public: Redirect old /public/ to new /shared/assets/public/
   RewriteRule ^public/(.*)$ /shared/assets/public/$1 [L]
   
-  # Downloads: Redirect old /downloads/ to new /shared/assets/downloads/
+  # Downloads: Redirect old download asset paths to shared assets
   RewriteRule ^downloads/(.*)$ /shared/assets/downloads/$1 [L]
   
   # ==========================================
   
-  # Clean URLs: /page/index.php → /page/
-  RewriteCond %{THE_REQUEST} ^.*/index\.php
-  RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
+  # Clean URLs: /page/index.html → /page/
+  RewriteCond %{THE_REQUEST} ^.*/index\.html
+  RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
   
-  # Serve index.php for directory requests
+  # Serve index.html for directory requests
   RewriteCond %{REQUEST_FILENAME} -d
-  RewriteCond %{REQUEST_FILENAME}/index.php -f
-  RewriteRule ^(.*)$ $1/index.php [L]
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*)$ $1/index.html [L]
 </IfModule>
 
 # ==========================================
